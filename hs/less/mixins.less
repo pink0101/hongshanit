@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+
+
+
+//@index 指的是数组的序号   when  满足这个条件  当前序号要小于数组的长度
+.adapterFuc(@index) when (@index<=length(@deviceWidthList)) {
+  @media (min-width: extract(@deviceWidthList, @index)) {
+    html {
+      font-size: extract(@deviceWidthList,@index)/@psdWidth*@baseSize;
+    }
+  }
+  //自调用  死循环
+  .adapterFuc(@index+1);
+}
