@@ -7,3 +7,23 @@ $(function () {
         responsive: true
     });
 });
+
+
+/*导航栏点击事件*/
+$(function () {
+    $('.hs_nav_switch').on('click', function () {
+        $('.hs_nav_left').fadeIn();
+    });
+    $('.hs_nav_left_icon').on('click', function () {
+        $('.hs_nav_left').fadeOut();
+    });
+
+
+    window.onresize = function () {
+        var width = $(window).width();//获取屏幕宽度
+        if (width > 992) {
+            $('.hs_nav_left').fadeIn();
+        }
+    };
+
+});

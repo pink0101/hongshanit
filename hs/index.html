@@ -7,8 +7,9 @@
     <title>红杉科技社</title>
     <!--ico图标的引入-->
     <link rel="shortcut icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" type="text/less" href="less/main.less">
+    <script type="text/javascript" src="lib/less/less.min.js"></script>
+    <!--<link rel="stylesheet" href="css/index.css">-->
     <!--兼容处理-->
     <!--[if lt IE 9]>
     <script src="lib/html5shiv/html5shiv.js"></script>
@@ -22,15 +23,20 @@
 <!--导航栏-->
 <nav class="hs_nav">
     <div class="hs_nav_da">
-        <div class="hs_nav_right"><img src="images/logo_name.png" alt=""></div>
+        <div class="hs_nav_right"><img src="images/gen.svg" alt=""></div>
         <ul class="hs_nav_left ">
+            <div class="hs_nav_left_icon">
+                <img src="images/gen.svg" alt="">
+                <i></i>
+            </div>
             <li><a href="#">社团信息</a></li>
             <li><a href="#">社团文化</a></li>
             <li><a href="#">业务体系</a></li>
             <li><a href="#">合作关系</a></li>
+            <li><a href="#">登录</a></li>
         </ul>
         <div class="hs_nav_switch">
-            <span></span>
+            <i></i>
         </div>
     </div>
 </nav>

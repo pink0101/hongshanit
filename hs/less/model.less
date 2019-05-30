@@ -42,6 +42,247 @@ body {
   clear: both;
 }
 
+html {
+  background: url("../images/banne1.jpg");
+}
+
+
+@font-face {  /*声明字体  引用字体*/
+  font-family: "icomoon";  /*我们自己起名字可以*/
+  src:  url('../fonts/icomoon.eot?7kkyc2');
+  src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+  url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+  url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+  url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+  font-style: normal;  /*倾斜字体正常*/
+}
+
+
+
+/*媒体查询*/
+@media (min-width: 320px) and (max-width: 992px){
+
+  /*顶部线条*/
+  .hs_header{
+    display: none;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #6510ad 60%, #104fad);
+    box-shadow: 0 33px 47px 121px rgba(0, 0, 0, 0.3);
+    z-index: 99999999;
+  }
+  /*导航栏*/
+  .hs_nav {
+    width: 100%;
+    margin: 0 auto;
+    height: 48px;
+    background: linear-gradient(90deg, #6510ad 60%, #104fad);
+    .hs_nav_da {
+      width: 100%;
+      height: 48px;
+      display: flex;
+      /*flex-flow: nowrap;*//*居中*/
+      justify-content: space-between; /*两端对齐*/
+      padding-left: 10px;
+      .hs_nav_right{
+        margin-top: 11px;
+        img{
+          width: 90px;
+          height: 28px;
+        }
+      }
+      .hs_nav_left{
+        display: none;
+        margin-left: -10px;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        padding-top: 48px;
+        background: rgba(0, 0, 0, 0.9);
+        .hs_nav_left_icon{
+          position: absolute;
+          top: 11px;
+          padding-left: 10px;
+          width: 100%;
+          img{
+            width: 90px;
+            height: 28px;
+          }
+          i{
+            padding-right: 17px;
+            padding-top: 2px;
+            float: right;
+            font-family: icomoon;
+            font-style:normal;
+          }
+          i::after{
+            font-size: 20px;
+            color: #ffffff;
+            content: '\ea0f';
+          }
+        }
+        li{
+          width: 100%;
+          height: 54.6px;
+          line-height: 54.6px;
+          text-align: center;
+          a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            font-size: 18px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+            color: #fff;
+          }
+        }
+      }
+      .hs_nav_switch{
+        margin-top: 11px;
+        padding-right: 15px;
+        padding-left: 15px;
+        i{
+          font-family: icomoon;
+          font-style:normal;
+        }
+        i::after{
+          font-size: 24px;
+          content: "\e9bd";
+          color: #ffffff;
+        }
+      }
+    }
+
+
+  }
+}
+
+@media (min-width: 992px) {
+  /*顶部线条*/
+  .hs_header {
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #6510ad 60%, #104fad);
+    box-shadow: 0 33px 47px 121px rgba(0, 0, 0, 0.3);
+    z-index: 99999999;
+  }
+  /*导航栏*/
+  .hs_nav {
+    width: 100%;
+    margin: 0 auto;
+    height: 156px;
+    background:rgba(0,0,0,0);
+
+    .hs_nav_da {
+      width: 100%;
+      height: 156px;
+      padding: 0 60/@bs;
+      display: flex;
+      /*flex-flow: nowrap;*//*居中*/
+      justify-content: space-between; /*两端对齐*/
+      text-align: center;
+
+      .hs_nav_right {
+        display: flex;
+        align-items: center; /*垂直居中对齐*/
+
+        img {
+          width: 150/@bs;
+        }
+      }
+
+      .hs_nav_left {
+        display: block;
+        .hs_nav_left_icon{
+          display: none;
+        }
+        padding: 30px 0;
+        li {
+          float: left;
+          width: 1.23rem;
+          padding-top: 50px;
+          padding-bottom: 16px;
+          a {
+            color: #ffffff;
+            font-size: 20/@bs;
+          }
+        }
+      }
+      .hs_nav_switch {
+        display: none;
+        span {
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  /*顶部线条*/
+  .hs_header {
+    display: block;
+    width: 100%;
+    height: 6px;
+    background: linear-gradient(90deg, #6510ad 60%, #104fad);
+    box-shadow: 0 33px 47px 121px rgba(0, 0, 0, 0.3);
+    z-index: 99999999;
+  }
+  /*导航栏*/
+  .hs_nav {
+    width: 100%;
+    margin: 0 auto;
+    height: 156px;
+    background:rgba(0,0,0,0);
+
+    .hs_nav_da {
+      width: 100%;
+      height: 156px;
+      padding: 0 60/@bs;
+      display: flex;
+      /*flex-flow: nowrap;*//*居中*/
+      justify-content: space-between; /*两端对齐*/
+      text-align: center;
+
+      .hs_nav_right {
+        display: flex;
+        align-items: center; /*垂直居中对齐*/
+
+        img {
+          width: 150/@bs;
+        }
+      }
+
+      .hs_nav_left {
+        display: block;
+        padding: 30px 0;
+        .hs_nav_left_icon{
+          display: none;
+        }
+        li {
+          float: left;
+          width: 1.23rem;
+          padding-top: 50px;
+          padding-bottom: 16px;
+          a {
+            color: #ffffff;
+            font-size: 20/@bs;
+          }
+        }
+      }
+      .hs_nav_switch {
+        display: none;
+        span {
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+
 
 
 
