@@ -43,14 +43,15 @@ body {
 }
 
 html {
-  background: url("../images/banne1.jpg");
+  //background: url("../images/banne1.jpg");
 }
 
 
-@font-face {  /*声明字体  引用字体*/
+@font-face {
+  /*声明字体  引用字体*/
   font-family: "icomoon";  /*我们自己起名字可以*/
-  src:  url('../fonts/icomoon.eot?7kkyc2');
-  src:  url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+  src: url('../fonts/icomoon.eot?7kkyc2');
+  src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
   url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
   url('../fonts/icomoon.woff?7kkyc2') format('woff'),
   url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
@@ -58,25 +59,25 @@ html {
 }
 
 
-
 /*媒体查询*/
-@media (min-width: 320px) and (max-width: 992px){
+@media (min-width: 320px) and (max-width: 992px) {
 
   /*顶部线条*/
-  .hs_header{
+  .hs_header {
     display: none;
     width: 100%;
     height: 6px;
     background: linear-gradient(90deg, #6510ad 60%, #104fad);
     box-shadow: 0 33px 47px 121px rgba(0, 0, 0, 0.3);
-    z-index: 99999999;
   }
+
   /*导航栏*/
   .hs_nav {
     width: 100%;
     margin: 0 auto;
     height: 48px;
     background: linear-gradient(90deg, #6510ad 60%, #104fad);
+
     .hs_nav_da {
       width: 100%;
       height: 48px;
@@ -84,14 +85,18 @@ html {
       /*flex-flow: nowrap;*//*居中*/
       justify-content: space-between; /*两端对齐*/
       padding-left: 10px;
-      .hs_nav_right{
+
+      .hs_nav_right {
         margin-top: 11px;
-        img{
+
+        img {
           width: 90px;
           height: 28px;
         }
       }
-      .hs_nav_left{
+
+      .hs_nav_left {
+        z-index: 9;
         display: none;
         margin-left: -10px;
         position: absolute;
@@ -99,52 +104,71 @@ html {
         height: 100%;
         padding-top: 48px;
         background: rgba(0, 0, 0, 0.9);
-        .hs_nav_left_icon{
+
+        .hs_nav_left_icon {
           position: absolute;
           top: 11px;
           padding-left: 10px;
           width: 100%;
-          img{
+
+          img {
             width: 90px;
             height: 28px;
           }
-          i{
+
+          i {
             padding-right: 17px;
             padding-top: 2px;
             float: right;
             font-family: icomoon;
-            font-style:normal;
+            font-style: normal;
           }
-          i::after{
+
+          i::after {
             font-size: 20px;
             color: #ffffff;
             content: '\ea0f';
           }
         }
-        li{
+
+        li {
           width: 100%;
           height: 54.6px;
           line-height: 54.6px;
           text-align: center;
-          a{
+
+          a {
             display: block;
             width: 100%;
             height: 100%;
             font-size: 18px;
             border-bottom: 1px solid rgba(255, 255, 255, 0.2);
             color: #fff;
+            -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+            -webkit-tap-highlight-color: transparent;
+          }
+
+          a:active {
+            display: block;
+            color: #52068c;
+            background: #ffffff;
+            border-top: 2px solid #d18e59;
+            width: 100%;
           }
         }
       }
-      .hs_nav_switch{
+
+      .hs_nav_switch {
         margin-top: 11px;
         padding-right: 15px;
         padding-left: 15px;
-        i{
+
+        i {
           font-family: icomoon;
-          font-style:normal;
+          font-style: normal;
         }
-        i::after{
+
+        i::after {
           font-size: 24px;
           content: "\e9bd";
           color: #ffffff;
@@ -154,6 +178,67 @@ html {
 
 
   }
+
+  /*轮播图*/
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    //border: 2px solid pink;
+    .slider_div {
+      width: 400%;
+      li {
+        //position: absolute;
+        float: left;
+        width: 25%;
+        a {
+          display: block;
+          width: 100%;
+
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .slider_spot{
+      position: absolute;
+      top: 500/@bs;
+      left: 50%;
+      transform: translateX(-52px);
+      //background: blue;
+      li{
+        float: left;
+        width: 26px;
+        height: 10px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 16px;
+        color: #fff;
+        p{
+          background: #ffffff;
+          border-radius: 50%;
+          display: block;
+          margin: 0 auto;
+          width: 10px;
+          height: 10px;
+          span{
+            display: none;
+          }
+        }
+      }
+    }
+    .arrow{
+      display: none;
+    }
+  }
+
+  .che{
+    width: 100%;
+    background: blue;
+    height: 20px;
+  }
+
 }
 
 @media (min-width: 992px) {
@@ -163,15 +248,21 @@ html {
     width: 100%;
     height: 6px;
     background: linear-gradient(90deg, #6510ad 60%, #104fad);
-    box-shadow: 0 33px 47px 121px rgba(0, 0, 0, 0.3);
-    z-index: 99999999;
   }
+
   /*导航栏*/
   .hs_nav {
+    box-shadow: 0 173px 64px -74px rgba(0, 0, 0, 0.5) inset,
+    0 0 0 0 rgba(0, 0, 0, 0) inset,
+    0 0 0 0 rgba(0, 0, 0, 0) inset,
+    0 0 0 0 rgba(0, 0, 0, 0) inset;
+
+    position: absolute;
+    z-index: 10;
     width: 100%;
     margin: 0 auto;
     height: 156px;
-    background:rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
 
     .hs_nav_da {
       width: 100%;
@@ -193,28 +284,107 @@ html {
 
       .hs_nav_left {
         display: block;
-        .hs_nav_left_icon{
+
+        .hs_nav_left_icon {
           display: none;
         }
+
         padding: 30px 0;
+
         li {
           float: left;
           width: 1.23rem;
           padding-top: 50px;
           padding-bottom: 16px;
+
           a {
             color: #ffffff;
             font-size: 20/@bs;
+            width: 100%;
+            height: 48px;
+            display: block;
+            //background: pink;
+            line-height: 48px;
+          }
+
+          a:hover {
+            display: block;
+            color: #52068c;
+            background: #ffffff;
+            border-top: 2px solid #d18e59;
+            width: 100%;
+            height: 48px;
+            line-height: 48px;
           }
         }
       }
+
       .hs_nav_switch {
         display: none;
+
         span {
         }
       }
     }
   }
+
+  /*轮播图*/
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    //border: 2px solid pink;
+    .slider_div {
+      width: 400%;
+      li {
+        //position: absolute;
+        float: left;
+        width: 25%;
+        a {
+          display: block;
+          width: 100%;
+
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .slider_spot{
+      position: absolute;
+      top: 447/@bs;
+      left: 78/@bs;
+      li{
+        float: left;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 16px;
+        color: #fff;
+        p{
+          display: block;
+          margin: 0 auto;
+          width: 34px;
+          height: 50px;
+          padding: 0 8px;
+          span{
+          }
+        }
+      }
+    }
+    .arrow{
+      display: none;
+    }
+  }
+
+  .che{
+    width: 100%;
+    background: blue;
+    height: 20px;
+  }
+
+
 }
 
 @media (min-width: 1200px) {
@@ -224,15 +394,18 @@ html {
     width: 100%;
     height: 6px;
     background: linear-gradient(90deg, #6510ad 60%, #104fad);
-    box-shadow: 0 33px 47px 121px rgba(0, 0, 0, 0.3);
-    z-index: 99999999;
   }
+
   /*导航栏*/
   .hs_nav {
     width: 100%;
     margin: 0 auto;
     height: 156px;
-    background:rgba(0,0,0,0);
+    background: rgba(0, 0, 0, 0);
+    box-shadow: 0 173px 64px -74px rgba(0, 0, 0, 0.5) inset,
+    0 0 0 0 rgba(0, 0, 0, 0) inset,
+    0 0 0 0 rgba(0, 0, 0, 0) inset,
+    0 0 0 0 rgba(0, 0, 0, 0) inset;
 
     .hs_nav_da {
       width: 100%;
@@ -255,27 +428,129 @@ html {
       .hs_nav_left {
         display: block;
         padding: 30px 0;
-        .hs_nav_left_icon{
+
+        .hs_nav_left_icon {
           display: none;
         }
+
         li {
           float: left;
           width: 1.23rem;
           padding-top: 50px;
           padding-bottom: 16px;
+          height: 0.48rem;
+
           a {
             color: #ffffff;
             font-size: 20/@bs;
+            width: 100%;
+            height: 48px;
+            display: block;
+            //background: pink;
+            line-height: 48px;
+          }
+
+          a:hover {
+            display: block;
+            color: #52068c;
+            background: #ffffff;
+            border-top: 2px solid #d18e59;
+            width: 100%;
+            height: 48px;
+            line-height: 48px;
           }
         }
       }
+
       .hs_nav_switch {
         display: none;
+
         span {
         }
       }
     }
   }
+
+  /*轮播图*/
+  .slider {
+    width: 100%;
+    overflow: hidden;
+    //border: 2px solid pink;
+    .slider_div {
+      width: 400%;
+      li {
+        //position: absolute;
+        float: left;
+        width: 25%;
+        a {
+          display: block;
+          width: 100%;
+
+          img {
+            display: block;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .slider_spot{
+      position: absolute;
+      top: 447/@bs;
+      left: 78/@bs;
+      li{
+        float: left;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        line-height: 50px;
+        font-size: 16px;
+        color: #fff;
+        p{
+          display: block;
+          margin: 0 auto;
+          width: 34px;
+          height: 50px;
+          padding: 0 8px;
+          span{
+          }
+        }
+      }
+    }
+    .arrow{
+      display: block;
+      .arrow-left,
+      .arrow-right{
+        position: absolute;
+        top: 322/@bs;
+        display: block;
+        width: 72px;
+        height: 72px;
+        line-height: 72px;
+        text-align: center;
+        background: #000;
+        color: #fff;
+        font-size: 40px;
+        border-radius: 50%;
+        border: 1px solid rgba(255, 255, 255, 0.5);
+        opacity: 0.5;
+        cursor: pointer;
+      }
+      .arrow-left{
+        left: 30/@bs;
+      }
+      .arrow-right{
+        right: 30/@bs;
+      }
+    }
+  }
+
+  .che{
+    width: 100%;
+    background: blue;
+    height: 20px;
+  }
+
+
 }
 
 
