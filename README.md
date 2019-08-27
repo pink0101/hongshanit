@@ -1,6 +1,6 @@
 # 红杉科社官网 项目 网址  www.hongshanit.com
 
-[![platform](http://i.imgur.com/if4CNr2.png?1)]()
+[![platform](http://r.photo.store.qq.com/psb?/V12E22fu0o6LGZ/ma5iU2MsTt7J2FB*91mK4FFwguuR*KsMD7af2*N40Ok!/r/dLYAAAAAAAAA)]()
 
 #### 我们的理念
 
