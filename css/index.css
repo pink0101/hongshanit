@@ -1,0 +1,5638 @@
+﻿@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0
+}
+
+.mr_frUl ul li img{
+    border-radius: 8px;
+}
+
+table {
+    border-collapse: collapse
+}
+
+a {
+    text-decoration: none
+}
+
+a:focus, a:hover {
+    text-decoration: none
+}
+
+a:focus {
+    outline: 0
+}
+
+p {
+    margin: 0
+}
+
+ol, ul {
+    margin: 0
+}
+
+.h1, .h2, .h3, .h4, .h5, h1, h2, h3, h4, h5 {
+    margin: 0
+}
+
+.cor_red {
+    color: #da0502
+}
+
+.cor_yellow {
+    color: #f5fb47
+}
+
+.cor_blue {
+    color: #00eaff
+}
+
+.f22 {
+    font-size: 22px
+}
+
+.clear {
+    clear: both
+}
+
+.shows {
+    display: block
+}
+
+.hides {
+    display: none
+}
+
+ol {
+    padding-left: 25px
+}
+
+.ellipsis {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap
+}
+
+.bd_weixin_popup {
+    height: auto !important
+}
+
+html {
+    height: 100%
+}
+
+body {
+    position: relative;
+    height: 100%;
+    min-width: 320px;
+    font-family: Arial, "微软雅黑"
+}
+
+.imgBg {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+
+.imgBg img {
+    display: none
+}
+
+.menuBg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    padding: 20px 0 0;
+    width: 60px;
+    height: 100%;
+    background: #FFF
+}
+
+.menuBtn {
+    text-align: center;
+    cursor: pointer
+}
+
+.menuBtn img {
+    margin: 6px auto 10px
+}
+
+.mBtnLine {
+    font-size: 0
+}
+
+.mBtnLine span {
+    display: inline-block;
+    width: 2px;
+    height: 20px;
+    background: #333;
+    vertical-align: top
+}
+
+.mBtnLine span:nth-child(2) {
+    margin: -4px 3px 0
+}
+
+.mOnLine {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 25px 0;
+    width: 100%;
+    background: #da0502;
+    color: #FFF
+}
+
+.mOnLine li {
+    position: relative
+}
+
+.mOnLine a {
+    color: #FFF
+}
+
+.mOnLineIco {
+    position: relative;
+    z-index: 1;
+    padding-bottom: 1px;
+    background: #da0502;
+    font-size: 18px;
+    line-height: 36px;
+    cursor: pointer
+}
+
+.mOnLineCon {
+    position: absolute;
+    top: 0;
+    right: 60px;
+    z-index: 0;
+    padding: 0 20px;
+    background: #da0502;
+    white-space: nowrap;
+    line-height: 36px;
+    transform: translate(150%, 0)
+}
+
+.mOnLineCon a {
+    display: block
+}
+
+.onLineWx .mOnLineCon {
+    top: auto;
+    bottom: -25px;
+    padding: 5px 0;
+    width: 140px;
+    background: 0 0;
+    background: #FFF
+}
+
+.onLineWx .mOnLineCon img {
+    margin: 0 auto
+}
+
+.mOnLine li:hover .mOnLineCon {
+    transition: all .5s ease 0s;
+    transform: translate(0, 0)
+}
+
+.headerBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    margin-right: 60%;
+    padding: 35px 40px;
+    width: 100%
+}
+
+.header {
+    margin-right: 60px
+}
+
+.logo {
+    float: left
+}
+
+.logo a {
+    display: block
+}
+
+.tel {
+    float: right;
+    color: #FFF;
+    font-size: 18px;
+    font-family: Verdana;
+    line-height: 24px
+}
+
+.telIco {
+    display: inline-block;
+    margin-top: -4px;
+    width: 20px;
+    height: 16px;
+    background: url(../images/tel.png) no-repeat;
+    vertical-align: middle
+}
+
+.tel img {
+    margin-top: -4px;
+    vertical-align: middle
+}
+
+.fp-viewing-page2 .logo .hides {
+    display: block
+}
+
+.fp-viewing-page2 .logo .shows {
+    display: none
+}
+
+.navBg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background: #222;
+    background: rgba(34, 34, 34, .9);
+    opacity: 0;
+    transition: all .5s ease 0s;
+    transform: translate(-100%, 0)
+}
+
+.navBg.active {
+    opacity: 1;
+    transform: translate(0, 0)
+}
+
+.navTop {
+    position: relative;
+    z-index: 1;
+    padding: 35px 40px;
+    border-bottom: 1px solid #333;
+    border-bottom: 1px solid rgba(255, 255, 255, .08)
+}
+
+.navClose {
+    float: right;
+    padding: 5px 0 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer
+}
+
+.navClose span {
+    display: block;
+    width: 100%;
+    height: 1px;
+    background: #FFF;
+    transform-origin: left center
+}
+
+.navClose span:first-child {
+    transform: rotate(45deg)
+}
+
+.navClose span:last-child {
+    margin-top: 20px;
+    transform: rotate(-45deg)
+}
+
+.navBot {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    padding-top: 100px;
+    height: 100%
+}
+
+.navList {
+    overflow: hidden;
+    height: 100%
+}
+
+.navList li {
+    float: left;
+    width: 12%;
+    height: 100%;
+    opacity: 0;
+    transition: all .5s ease 0s;
+    transform: translate(0, 50px)
+}
+
+.navList li a {
+    display: block;
+    padding: 100px 0 0 20%;
+    height: 100%;
+    border-right: 1px solid #333;
+    border-right: 1px solid rgba(255, 255, 255, .08);
+    color: #FFF;
+    transition: all .5s ease 0s
+}
+
+.navList li a span {
+    display: block
+}
+
+.navEn {
+    font-size: 30px
+}
+
+.navCn {
+    font-size: 22px
+}
+
+.navList li a:hover {
+    padding-left: 10%;
+    color: #da0502
+}
+
+.navList li.text-right {
+    padding: 100px 0 0;
+    width: 13.5%;
+    color: #FFF;
+    font-size: 16px;
+    line-height: 36px
+}
+
+.navTel {
+    font-size: 22px;
+    font-family: Verdana
+}
+
+.navBotCon {
+    position: absolute;
+    right: 2.5%;
+    bottom: 65px;
+    padding-left: 5px;
+    width: 13.5%;
+    color: #FFF;
+    color: #FFF;
+    font-size: 12px;
+    line-height: 22px
+}
+
+.navSearch {
+    position: relative;
+    float: right;
+    margin-bottom: 15px;
+    padding-right: 34px;
+    width: 77%;
+    background: #da0502;
+    line-height: 32px
+}
+
+.navSearch input {
+    display: block;
+    padding: 5px 10px;
+    width: 100%;
+    height: 32px;
+    border: none;
+    background: 0 0;
+    color: #FFF;
+    line-height: 22px
+}
+
+.searchIco {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 34px;
+    color: #FFF;
+    text-align: center;
+    font-size: 14px
+}
+
+.searchIco:focus, .searchIco:hover {
+    color: #FFF
+}
+
+.navShare {
+    font-size: 14px
+}
+
+.navShare li {
+    position: relative
+}
+
+.navShare li a {
+    color: #FFF
+}
+
+.navWechat {
+    position: absolute;
+    right: 0;
+    bottom: 30px;
+    width: 100px;
+    opacity: 0;
+    transition: all .5s ease 0s;
+    transform: scaleY(0)
+}
+
+.navShare li:hover .navWechat {
+    opacity: 1;
+    transform: scaleY(1)
+}
+
+.active .navList li {
+    opacity: 1;
+    transform: translate(0, 0)
+}
+
+.active .navList li {
+    transition-delay: .3s
+}
+
+#navPage {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    text-align: left;
+    transition: all .1s ease-out 0s;
+    transform: translateY(-50%)
+}
+
+#navPage.noactive {
+    left: -10%
+}
+
+#navPage li {
+    position: relative;
+    padding-left: 40px
+}
+
+#navPage li:after {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 1px;
+    background: #da0502;
+    content: "";
+    transition: all .5s ease-out 0s
+}
+
+#navPage li.active:first-child:after {
+    width: 95px
+}
+
+#navPage li:first-child + li.active:after {
+    width: 95px
+}
+
+#navPage li:first-child + li + li.active:after {
+    width: 110px
+}
+
+#navPage li:first-child + li + li + li.active:after {
+    width: 95px
+}
+
+#navPage li:first-child + li + li + li + li.active:after {
+    width: 130px
+}
+
+#navPage li:first-child + li + li + li + li + li.active:after {
+    width: 115px
+}
+
+#navPage li:first-child + li + li + li + li + li + li.active:after {
+    width: 95px
+}
+
+#navPage li:first-child + li + li + li + li + li + li + li.active:after {
+    width: 115px
+}
+
+#navPage li a {
+    display: inline-block;
+    color: #aaa;
+    font-weight: 700;
+    font-size: 0;
+    font-family: Arial;
+    line-height: 34px
+}
+
+#navPage li a i, #navPage li a span {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px
+}
+
+#navPage li a i {
+    font-style: normal
+}
+
+#navPage li a span {
+    overflow: hidden;
+    width: 0;
+    white-space: nowrap;
+    transition: all .5s ease-out 0s
+}
+
+#navPage li a:hover, #navPage li.active a {
+    color: #da0502
+}
+
+#navPage li a:hover span, #navPage li.active a span {
+    width: 80px
+}
+
+#hmpage {
+    opacity: 0;
+    -webkit-opacity: 0
+}
+
+.mbox {
+    margin-right: 60px
+}
+
+.mbox1 .swiper-slide {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    -webkit-box-align: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    align-items: center
+}
+
+.mbox1 {
+    position: relative;
+    overflow: hidden;
+    height: 100%
+}
+
+.banImg {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%
+}
+
+.banImg .imgBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.mbox1 .swiper-slide-active .imgBg {
+    animation: imageAnimation 6s linear 0s
+}
+
+.banText {
+    position: absolute;
+    bottom: 25%;
+    left: 23%;
+    z-index: 1;
+    width: 478px
+}
+
+.ban1Line {
+    display: block;
+    margin: 20px 0;
+    width: 100%;
+    height: 1px;
+    background: rgba(255, 255, 255, .2);
+    transition: all .5s ease 0s
+}
+
+.banBorder1 {
+    position: absolute;
+    top: -40px;
+    right: -43px;
+    width: 180px;
+    height: 300px
+}
+
+.banBorder1 span {
+    position: absolute;
+    display: block;
+    transition: all .5s ease 0s
+}
+
+.banBorder1 span i {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: #FFF
+}
+
+.ban1Line1 {
+    bottom: 274px;
+    left: 0;
+    width: 2px;
+    height: 26px
+}
+
+.ban1Line1 i {
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.ban1Line2 {
+    top: 0;
+    left: 2px;
+    width: 178px;
+    height: 2px
+}
+
+.ban1Line3 {
+    top: 2px;
+    right: 0;
+    width: 2px;
+    height: 298px
+}
+
+.ban1Line4 {
+    right: 0;
+    bottom: 0;
+    width: 178px;
+    height: 2px
+}
+
+.ban1Line4 i {
+    position: absolute;
+    right: 0;
+    bottom: 0
+}
+
+.ban1Line5 {
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 195px
+}
+
+.ban1Line5 i {
+    position: absolute;
+    bottom: 0;
+    left: 0
+}
+
+.banBorder1:after {
+    position: absolute;
+    bottom: 30px;
+    left: -35px;
+    display: block;
+    width: 49px;
+    height: 12px;
+    background: url(../images/banIco1.html) 0 center no-repeat;
+    content: "";
+    animation: animatedBg 10s linear infinite
+}
+
+.banText2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    margin: -334px 0 0 -334px;
+    width: 668px;
+    height: 668px
+}
+
+.banTextCn2, .banTextEn2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0
+}
+
+.banTextCir {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: url(../images/banIco2.png) center center no-repeat;
+    background-size: cover
+}
+
+.banLine2 {
+    position: absolute;
+    width: 0;
+    height: 0;
+    background: url(../images/ban2Line.png) center center no-repeat;
+    background-size: cover;
+    transition: all .5s ease 1.5s;
+    animation: Yopacity 3s linear infinite .8s
+}
+
+.swiper-slide-active .banLine2 {
+    width: 100%;
+    height: 100%
+}
+
+.banBg3 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: #e4e4e7
+}
+
+.banBg3:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 0;
+    height: 100%;
+    background: #242632;
+    content: "";
+    transition: all .8s ease .3s
+}
+
+.ban3Ico {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat
+}
+
+.ban3Ico1 {
+    background-image: url(../images/ban3Ico1.png);
+    background-position: left center
+}
+
+.ban3Ico2 {
+    background-image: url(../images/ban3Ico2.png);
+    background-position: bottom center
+}
+
+.ban3Ico3 {
+    background-image: url(../images/ban3Ico3.png);
+    background-position: right center
+}
+
+.banText3 {
+    margin: 0 auto;
+    padding: 50px 0 0;
+    max-width: 60%
+}
+
+.banText3 img {
+    margin: 0 auto
+}
+
+.banImg3 {
+    position: relative;
+    margin: 70px auto 0;
+    max-width: 1150px
+}
+
+.banImg3 > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%
+}
+
+.banImg3 > div.banImg31 {
+    position: relative
+}
+
+.swiper-slide-active .banBg3:after {
+    width: 49.95%
+}
+
+.section {
+    overflow: hidden;
+    /*height: 100%;*/
+    text-align: center
+}
+
+.mainbox3 {
+    background: url(../images/mainbox3bg.html) center top no-repeat;
+    background-size: cover
+}
+
+.mainbox4 {
+    background: url(../images/mainbox4bg.html) right bottom no-repeat;
+    background-size: cover
+}
+
+.mainbox5 {
+    background: #f5f5f5
+}
+
+.mainbox6 {
+    background: #f5f5f5
+}
+
+.main_box {
+    padding-top: 86px
+}
+
+.mbox1 .swiper-pagination {
+    bottom: 5%;
+    margin: 0;
+    padding-right: 1%;
+    text-align: right
+}
+
+.mbox1 .swiper-pagination-bullet {
+    width: 30px;
+    height: 2px;
+    border-radius: 0;
+    background: #FFF;
+    vertical-align: bottom;
+    opacity: 1;
+    transition: all .5s ease 0s
+}
+
+.mbox1 .swiper-pagination-bullet-active {
+    height: 8px;
+    background: #e10000
+}
+
+.welcome {
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    z-index: 1;
+    display: block;
+    width: 280px;
+    height: 70px;
+    background: #da0502;
+    color: #FFF;
+    font-size: 14px;
+    font-family: Arial;
+    line-height: 70px
+}
+
+.welcome i, .welcome span, .welcome strong {
+    display: inline-block;
+    margin: 0 2px;
+    vertical-align: middle
+}
+
+.welcomeDot {
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #FFF
+}
+
+.welcomeLine {
+    width: 46px;
+    height: 1px;
+    background: #FFF;
+    transition: all .5s ease 0s
+}
+
+.welcome:focus, .welcome:hover {
+    color: #FFF
+}
+
+.welcome:hover .welcomeLine {
+    width: 60px
+}
+
+.mbox2Bg {
+    background: #f0f0f0
+}
+
+.mbox3Bg {
+    background: url(../images/box3Bg.jpg) center center no-repeat;
+    background-size: cover
+}
+
+.mbox4Bg, .mbox7Bg {
+    background: #f5f5f5
+}
+
+.mbox5Bg {
+    background: url(../images/box5Bg.html) center bottom no-repeat;
+    background-size: cover
+}
+
+.mbox6Bg {
+    background: url(../images/box6Bg.jpg) center center no-repeat;
+    background-size: cover
+}
+
+.mbox8Bg {
+    background: url(../images/box8Bg.jpg) center center no-repeat;
+    background-size: cover
+}
+
+.box2ImgBg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow: hidden;
+    width: 42%;
+    height: 100%
+}
+
+.box2ImgBg .imgBg {
+    height: 100%;
+    transition: all 1s ease 0s;
+    transform: scale(1.05)
+}
+
+.box2ImgBg .imgBg:hover {
+    transform: scale(1)
+}
+
+.mbox2Text {
+    padding-top: 50px;
+    padding-left: 13%;
+    width: 58%;
+    text-align: left
+}
+
+.mbox2TitEn {
+    color: #da0502;
+    text-transform: uppercase;
+    font-size: 46px;
+    font-family: Arial;
+    line-height: 150%;
+    opacity: 0;
+    transition: all .6s ease 0s;
+    transform: translateX(-50px)
+}
+
+.mbox2TitCn {
+    color: #333;
+    font-size: 30px;
+    line-height: 150%;
+    opacity: 0;
+    transition: all .6s ease 0s;
+    transform: translateX(-50px)
+}
+
+.mbox2Brief {
+    overflow: hidden;
+    margin: 20px 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 26px;
+    opacity: 0;
+    transition: all .8s ease 0s;
+    transform: translateX(-50px)
+}
+
+.mbox2Num {
+    margin: 40px -40px;
+    color: #333;
+    font-size: 0;
+    line-height: 26px
+}
+
+.mbox2Num li {
+    padding: 5px 40px;
+    vertical-align: top;
+    font-size: 12px
+}
+
+.mbox2NumSp {
+    font-size: 38px;
+    font-family: Arial
+}
+
+.mbox2Bot {
+    position: relative;
+    margin: 0 -2px;
+    padding: 35px 35px 25px;
+    background: #FFF;
+    font-size: 0
+}
+
+.mbox2Bot:after {
+    position: absolute;
+    top: 0;
+    right: -130px;
+    display: block;
+    width: 130px;
+    height: 100%;
+    background: #FFF;
+    content: ""
+}
+
+.mbox2Bot li {
+    padding: 2px;
+    width: 25%;
+    vertical-align: top;
+    text-align: center;
+    opacity: 0;
+    transition: all .8s ease 0s;
+    transform: translateX(-20px)
+}
+
+.mbox2Bot li a {
+    display: block
+}
+
+.mbox2Img {
+    margin-bottom: 10px
+}
+
+.mbox2Img img {
+    margin: 0 auto
+}
+
+.mbox2BotH3 {
+    color: #333;
+    font-size: 15px;
+    line-height: 34px
+}
+
+.mbox2Bot li a:hover .mbox2Img img {
+    animation: swing 1s infinite linear
+}
+
+.mbox2More .welcome {
+    position: static;
+    width: 220px;
+    height: 54px;
+    line-height: 54px
+}
+
+.active .mbox2Bot li, .active .mbox2Brief, .active .mbox2TitCn, .active .mbox2TitEn {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+.active .mbox2TitEn {
+    transition-delay: .3s
+}
+
+.active .mbox2TitCn {
+    transition-delay: .5s
+}
+
+.active .mbox2Brief {
+    transition-delay: .7s
+}
+
+.mbox3 {
+    margin: 0 auto;
+    padding: 50px 0 0;
+    max-width: 1270px
+}
+
+.mbox3Lef {
+    float: left;
+    width: 45%;
+    text-align: left
+}
+
+.mbox3Tit {
+    margin-bottom: 40px;
+    margin-left: 120px;
+    max-width: 350px;
+    color: #FFF
+}
+
+.mbox3Tit .mbox2TitCn, .mbox3Tit .mbox2TitEn {
+    color: #FFF;
+    line-height: 130%
+}
+
+.mbox3Brief {
+    overflow: hidden;
+    margin: 5px 0 0;
+    height: 44px;
+    font-size: 12px;
+    line-height: 22px;
+    opacity: 0;
+    transition: all .8s ease 0s;
+    transform: translateX(-50px)
+}
+
+.active .mbox3Brief {
+    opacity: 1;
+    transition-delay: .7s;
+    transform: translateX(0)
+}
+
+.mbox3LefCon {
+    position: relative
+}
+
+.mbox3LefItem li {
+    position: relative;
+    padding-bottom: 32px;
+    opacity: 0;
+    transition: all .8s ease 0s;
+    transform: translateY(20px)
+}
+
+.mbox3LefItem li:after {
+    position: absolute;
+    bottom: 0;
+    left: 19px;
+    display: block;
+    width: 1px;
+    height: 32px;
+    background: rgba(255, 255, 255, .2);
+    content: ""
+}
+
+.mbox3LefItem li:last-child:after {
+    display: none
+}
+
+.mbox3LefItem li a {
+    display: block;
+    padding: 7px 0;
+    height: 100%
+}
+
+.mbox3Ico, .mbox3Line, .mbox3Name {
+    display: inline-block;
+    color: #fefefe;
+    vertical-align: top;
+    font-size: 12px;
+    font-family: Arial;
+    line-height: 20px;
+    transition: all .6s ease 0s
+}
+
+.mbox3Line {
+    margin: 6px 20px 0;
+    width: 40px;
+    height: 1px;
+    background: rgba(255, 255, 255, .2);
+    font-size: 0
+}
+
+.mbox3H3 {
+    margin-bottom: 5px;
+    font-size: 15px
+}
+
+.mbox3LefItem li.active a .mbox3Line {
+    width: 86px
+}
+
+.mbox3LefItem li a:hover .mbox3Name, .mbox3LefItem li.active a .mbox3Name {
+    color: #ff3431
+}
+
+.mbox3Rig {
+    position: relative;
+    float: right;
+    width: 55%;
+    min-height: 211px;
+    transition: all .6s ease 0s;
+    transform: translateX(50%)
+}
+
+.box3RigImg img {
+    float: right;
+    max-width: 70%
+}
+
+.box3RigImgItem {
+    display: none
+}
+
+.box3RigImgItem.active {
+    display: block
+}
+
+.box3RigText {
+    position: absolute;
+    right: 60px;
+    bottom: 80px;
+    padding: 35px 60px;
+    width: 100%;
+    background: #FFF
+}
+
+.box3RigText .swiper-slide {
+    text-align: left
+}
+
+.mbox3H4 {
+    color: #333;
+    font-size: 24px;
+    line-height: 120%
+}
+
+.mbox3Con {
+    overflow: hidden;
+    margin: 15px 0;
+    height: 48px;
+    color: #777;
+    font-size: 14px;
+    line-height: 24px
+}
+
+.mbox3Btn {
+    color: #da0502;
+    vertical-align: top;
+    text-align: left;
+    font-size: 24px
+}
+
+.mbox3Btn span {
+    padding: 0 10px;
+    cursor: pointer
+}
+
+.mbox3Pause img {
+    margin-top: -4px
+}
+
+.active .mbox3LefItem li {
+    opacity: 1;
+    transform: translateY(0)
+}
+
+.active .mbox3Rig {
+    transition: all .8s ease .3s;
+    transform: translateX(0)
+}
+
+.fp-viewing-page4 .tel {
+    color: #da0502
+}
+
+.fp-viewing-page4 .telIco {
+    background-image: url(../images/telRed.html)
+}
+
+.fp-viewing-page4 .mBtnLine span {
+    background: #da0502
+}
+
+.mbox4Lef {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 29%;
+    height: 100%;
+    background: #222;
+    color: #ddd;
+    -webkit-box-align: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-pack: center;
+    -webkit-flex-flow: column wrap;
+    -ms-flex-flow: column wrap;
+    flex-flow: column wrap;
+    align-items: center
+}
+
+.mbox4LefCon {
+    padding-left: 32%;
+    width: 100%;
+    text-align: left
+}
+
+.mbox4Tit .mbox2TitCn, .mbox4Tit .mbox2TitEn {
+    color: #ddd;
+    line-height: 130%
+}
+
+.mbox4Tit .mbox3Brief {
+    height: 22px
+}
+
+.mbox4LefItem {
+    margin: 20px 0 40px;
+    max-width: 180px
+}
+
+.mbox4LefItem li {
+    opacity: 0;
+    transition: all .5s ease 0s;
+    transform: scaleY(-1) translateY(10px)
+}
+
+.mbox4LefItem li a {
+    position: relative;
+    display: block;
+    padding: 10px 0;
+    color: #bbb;
+    font-size: 14px;
+    line-height: 26px
+}
+
+.mbox4LefItem li a:before {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    margin-top: -2px;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background: #FFF;
+    content: "";
+    opacity: 0;
+    transition: all .6s ease 0s
+}
+
+.mbox4LefItem li a i.fa {
+    color: #FFF;
+    opacity: 0;
+    transition: all .6s ease 0s;
+    transform: translateX(-10px)
+}
+
+.mbox4LefLine {
+    display: inline-block;
+    margin: 0 7px 0 22px;
+    width: 64px;
+    height: 1px;
+    background: rgba(255, 255, 255, .35);
+    vertical-align: middle;
+    transition: all .6s ease 0s
+}
+
+.mbox4LefItem li a:hover {
+    color: #ff3431
+}
+
+.mbox4LefItem li a:hover:before {
+    left: -26px;
+    opacity: 1
+}
+
+.mbox4LefItem li a:hover i.fa {
+    opacity: 1;
+    transform: translateX(0)
+}
+
+.mbox4LefItem:hover .mbox4LefLine {
+    width: 30px
+}
+
+.mbox4LefItem:hover li a:hover .mbox4LefLine {
+    width: 76px;
+    background: #FFF
+}
+
+.mbox4More {
+    display: block;
+    width: 140px;
+    height: 42px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    color: rgba(255, 255, 255, .5);
+    text-align: center;
+    line-height: 40px;
+    transition: all .6s ease 0s
+}
+
+.mbox4MoreIco {
+    position: relative;
+    display: inline-block;
+    margin: -3px 0 0 10px;
+    width: 11px;
+    height: 11px;
+    vertical-align: middle
+}
+
+.mbox4MoreIco:after, .mbox4MoreIco:before {
+    position: absolute;
+    display: block;
+    background: rgba(255, 255, 255, .5);
+    content: "";
+    transition: all .6s ease 0s
+}
+
+.mbox4MoreIco:after {
+    top: 5px;
+    left: 0;
+    width: 100%;
+    height: 1px
+}
+
+.mbox4MoreIco:before {
+    top: 0;
+    left: 5px;
+    width: 1px;
+    height: 100%
+}
+
+.mbox4More:focus, .mbox4More:hover {
+    border-color: #da1713;
+    background: #da1713;
+    color: #FFF
+}
+
+.mbox4More:focus .mbox4MoreIco:after, .mbox4More:focus .mbox4MoreIco:before, .mbox4More:hover .mbox4MoreIco:after, .mbox4More:hover .mbox4MoreIco:before {
+    background: #FFF
+}
+
+.mbox4 {
+    margin-left: 29%;
+    height: 100%
+}
+
+.mbox4List {
+    position: relative;
+    padding: 80px 110px;
+    height: 100%
+}
+
+.mbox4List .swiper-wrapper {
+    display: block;
+    overflow: hidden
+}
+
+.mbox4List .swiper-slide {
+    float: left;
+    display: block;
+    padding: 15px;
+    width: 33.33%;
+    height: 33.33%;
+    opacity: 0;
+    transition: all .8s ease 0s;
+    transform: translateY(20px)
+}
+
+.mbox4Link {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 100%
+}
+
+.mbox4Img {
+    position: relative;
+    overflow: hidden;
+    height: 100%
+}
+
+.mbox4Img img {
+    width: 100%;
+    transition: all 1s ease 0s
+}
+
+.mbox4Ico {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -30px 0 0 -20px;
+    width: 40px;
+    height: 40px;
+    background: url(../images/mbox4Ico.png) center center #da0502 no-repeat;
+    opacity: 0;
+    transition: all 1s ease 0s;
+    transform: scale(10)
+}
+
+.mbox4Text {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    padding: 9px 10px;
+    width: 100%;
+    background: rgba(218, 5, 2, .9);
+    color: #FFF;
+    text-align: center;
+    font-size: 14px;
+    transition: all .6s ease 0s
+}
+
+.mbox4Text h3 {
+    font-size: 14px;
+    line-height: 200%
+}
+
+.mbox4Link:hover .mbox4Img img {
+    transform: scale(1.1)
+}
+
+.mbox4Link:hover .mbox4Ico {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.mbox4Link:hover .mbox4Text {
+    bottom: 0
+}
+
+.mbox4Btn {
+    position: absolute;
+    top: 50%;
+    display: none;
+    color: #da0502;
+    font-size: 40px;
+    cursor: pointer;
+    transform: translateY(-50%)
+}
+
+.mbox4Prev {
+    left: 50px
+}
+
+.mbox4Next {
+    right: 50px
+}
+
+.mbox4Listm {
+    display: none
+}
+
+.active .mbox4LefItem li {
+    opacity: 1;
+    transform: scaleY(1) translateY(0)
+}
+
+.active .mbox4List .swiper-slide {
+    opacity: 1;
+    transition-delay: .3s;
+    transform: translateY(0)
+}
+
+.active .mbox4List .swiper-slide:nth-child(2) {
+    transition-delay: .5s
+}
+
+.active .mbox4List .swiper-slide:nth-child(3) {
+    transition-delay: .7s
+}
+
+.active .mbox4List .swiper-slide:nth-child(4) {
+    transition-delay: .9s
+}
+
+.active .mbox4List .swiper-slide:nth-child(5) {
+    transition-delay: 1.1s
+}
+
+.active .mbox4List .swiper-slide:nth-child(6) {
+    transition-delay: 1.3s
+}
+
+.active .mbox4List .swiper-slide:nth-child(7) {
+    transition-delay: 1.5s
+}
+
+.active .mbox4List .swiper-slide:nth-child(8) {
+    transition-delay: 1.7s
+}
+
+.active .mbox4List .swiper-slide:nth-child(9) {
+    transition-delay: 1.9s
+}
+
+.fp-viewing-page5 .logo .hides {
+    display: block
+}
+
+.fp-viewing-page5 .logo .shows {
+    display: none
+}
+
+.fp-viewing-page5 .tel {
+    color: #da0502
+}
+
+.fp-viewing-page5 .telIco {
+    background-image: url(../images/telRed.html)
+}
+
+.fp-viewing-page5 .mBtnLine span {
+    background: #da0502
+}
+
+.mbox5 {
+    padding-top: 50px
+}
+
+.mbox5List {
+    margin: 0 auto;
+    max-width: 62.5%
+}
+
+.mbox5List .swiper-container {
+    padding: 30px 0
+}
+
+.mbox5List .swiper-slide {
+    opacity: 0;
+    transition: all .4s ease 0s;
+    transform: translateY(100%)
+}
+
+.mbox5List .swiper-slide:nth-child(2n) {
+    transform: translateY(-100%)
+}
+
+.mbox5List .swiper-slide a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    background: rgba(122, 122, 122, .05);
+    transition: all .7s ease 0s
+}
+
+.mbox5List .swiper-slide img {
+    width: 100%
+}
+
+.mbox5Img {
+    transition: all .7s ease 0s
+}
+
+.mbox5Mask {
+    position: absolute;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background: #da0502
+}
+
+.mbox5Hov {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: all .7s ease 0s;
+    transform: scale(2)
+}
+
+.mbox5List .swiper-slide a:hover {
+    background: #da0502
+}
+
+.mbox5List .swiper-slide a:hover .mbox5Img {
+    opacity: 0;
+    transform: scale(2)
+}
+
+.mbox5List .swiper-slide a:hover .mbox5Hov {
+    opacity: 1;
+    transform: scale(1)
+}
+
+.mbox5Bot {
+    position: relative;
+    padding: 10px 200px
+}
+
+.mbox5Btn {
+    position: absolute;
+    top: 50%;
+    color: #333;
+    font-size: 0;
+    font-family: Arial;
+    cursor: pointer;
+    transform: translateY(-50%)
+}
+
+.mbox5Btn i, .mbox5Btn strong {
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 14px
+}
+
+.mbox5Btn i.fa {
+    color: #da0502;
+    font-size: 15px
+}
+
+.mbox5Btn strong {
+    padding: 0 5px
+}
+
+.mbox5Line {
+    width: 148px;
+    height: 1px;
+    background: #d2d2d2;
+    transition: width .6s ease 0s
+}
+
+.mbox5Btn:hover .mbox5Line {
+    width: 100px;
+    background: #da0502
+}
+
+.swiper-button-disabled strong {
+    opacity: .5
+}
+
+.swiper-button-disabled .mbox5Line {
+    width: 100px
+}
+
+.swiper-button-disabled:hover .mbox5Line {
+    background: #d2d2d2
+}
+
+.mbox5Prev {
+    left: 0
+}
+
+.mbox5Next {
+    right: 0
+}
+
+.mbox5Bot .swiper-pagination {
+    position: static
+}
+
+.mbox5Bot .swiper-pagination-bullet {
+    margin: 0 6px;
+    width: 34px;
+    height: 3px;
+    border-radius: 0;
+    background: #ccc;
+    vertical-align: middle;
+    opacity: 1
+}
+
+.mbox5Bot .swiper-pagination-bullet-active {
+    background: #da0502
+}
+
+.active .mbox5List .swiper-slide {
+    opacity: 1;
+    transition: all .8s ease .5s;
+    transform: translateY(0)
+}
+
+.mbox6 {
+    padding: 50px 0 0
+}
+
+.mbox6Tit {
+    padding: 0 15px;
+    color: #FFF
+}
+
+.mbox6TitEn {
+    letter-spacing: .6em;
+    font-size: 30px;
+    font-family: Arial;
+    line-height: 150%;
+    opacity: 0;
+    transition: all .6s ease 0s;
+    transform: translateX(-50%)
+}
+
+.mbox6TitCn {
+    font-size: 36px;
+    line-height: 150%;
+    opacity: 0;
+    transition: all .6s ease 0s;
+    transform: translateX(50%)
+}
+
+.mbox6Text {
+    position: relative;
+    margin: 60px auto;
+    padding: 45px 80px;
+    max-width: 650px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    color: #a7a7a8;
+    font-size: 16px;
+    line-height: 34px;
+    opacity: 0;
+    transition: all .6s ease 0s
+}
+
+.mbox6Text:after, .mbox6Text:before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 80px;
+    height: 1px;
+    background: rgba(255, 255, 255, .5);
+    content: "";
+    font-size: 0;
+    transition: all .6s ease 0s;
+    transform: rotate(0);
+    transform-origin: left top
+}
+
+.mbox6Text:before {
+    top: -15px;
+    left: 60px
+}
+
+.mbox6Text:after {
+    top: 120px;
+    left: -70px
+}
+
+.mbox6Text span {
+    padding: 0 4px;
+    color: #f22
+}
+
+.f16 {
+    font-size: 16px
+}
+
+.f24 {
+    font-size: 24px
+}
+
+.f28 {
+    font-size: 28px
+}
+
+.mbox6Top {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin: -40px 0 0 -5px;
+    width: 10px;
+    height: 80px;
+    color: #FFF
+}
+
+.mbox6Cir {
+    display: block;
+    margin: 0 auto;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #FFF
+}
+
+.mbox6Line {
+    display: block;
+    margin: 10px auto 0;
+    width: 1px;
+    height: 50px;
+    background: #FFF
+}
+
+.mbox6Arrow {
+    line-height: 12px;
+    animation: swing 1s linear infinite
+}
+
+.mbox6Ico {
+    position: absolute;
+    right: -24px;
+    bottom: 30%;
+    display: block;
+    width: 49px;
+    height: 12px;
+    background: url(../images/mbox6Ico.html) 0 center no-repeat;
+    animation: animatedBg 10s linear infinite
+}
+
+.mbox6Link {
+    position: absolute;
+    bottom: -21px;
+    left: 0;
+    display: block;
+    margin-left: -80px;
+    width: 160px;
+    background: #da0502;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    line-height: 42px;
+    opacity: 0;
+    transition: all .6s ease 0s;
+    animation: shake 10s linear infinite
+}
+
+.mbox6Link:focus, .mbox6Link:hover {
+    color: #FFF
+}
+
+.active .mbox6TitCn, .active .mbox6TitEn {
+    opacity: 1;
+    transition: all 1s ease .3s;
+    transform: translateX(0)
+}
+
+.active .mbox6Text {
+    opacity: 1;
+    transition: all .6s ease .6s
+}
+
+.active .mbox6Text:after, .active .mbox6Text:before {
+    transition: all 1s ease 1s;
+    transform: rotate(-45deg)
+}
+
+.active .mbox6Link {
+    left: 50%;
+    opacity: 1;
+    transition: all 1s ease 1.5s
+}
+
+
+.fp-viewing-page7 .logo .hides {
+    display: block
+}
+
+.fp-viewing-page7 .logo .shows {
+    display: none
+}
+
+.fp-viewing-page7 .tel {
+    color: #da0502
+}
+
+.fp-viewing-page7 .telIco {
+    background-image: url(../images/telRed.html)
+}
+
+.fp-viewing-page7 .mBtnLine span {
+    background: #da0502
+}
+
+.mbox7List {
+    overflow: hidden;
+    margin: 45px auto;
+    max-width: 1400px
+}
+
+.mbox7List li {
+    position: relative;
+    float: left;
+    width: 50%;
+    opacity: 0;
+    transition: all .6s ease 0s;
+    transform: translate(-50%, 50%)
+}
+
+.mbox7List li:nth-child(2n) {
+    transform: translate(50%, -50%)
+}
+
+.mbox7List li a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding-left: 50%;
+    height: 100%;
+    min-height: 200px;
+    background: #FFF;
+    transition: all .5s linear 0s
+}
+
+.mbox7Img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%
+}
+
+.mbox7Text {
+    padding: 30px 50px;
+    color: #888;
+    font-size: 12px;
+    line-height: 22px
+}
+
+.mbox7Name {
+    overflow: hidden;
+    height: 44px;
+    color: #333;
+    text-align: left;
+    font-size: 14px;
+    line-height: 22px;
+    transition: all .5s linear 0s
+}
+
+.mbox7Time {
+    height: 36px;
+    color: #777;
+    text-align: left;
+    font-size: 12px;
+    line-height: 36px;
+    transition: all .5s linear 0s
+}
+
+.mbox7Brief {
+    overflow: hidden;
+    height: 44px;
+    color: #888;
+    text-align: left;
+    transition: all .5s linear 0s
+}
+
+.mbox7Ico {
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    display: block;
+    margin-left: -8px;
+    width: 16px;
+    height: 3px;
+    background: #da0502;
+    transition: all .5s linear 0s
+}
+
+.mbox7List li a:hover {
+    background: #da0502;
+    color: #FFF
+}
+
+.mbox7List li a:hover .mbox7Brief, .mbox7List li a:hover .mbox7Name, .mbox7List li a:hover .mbox7Time {
+    color: #FFF
+}
+
+.mbox7List li a:hover .mbox7Ico {
+    background: #FFF
+}
+
+.mbox7List li:nth-child(3) a, .mbox7List li:nth-child(4) a {
+    padding-right: 50%;
+    padding-left: 0
+}
+
+.mbox7List li:nth-child(3) .mbox7Img, .mbox7List li:nth-child(4) .mbox7Img {
+    right: 0;
+    left: auto
+}
+
+.mbox7More {
+    margin: 0 auto;
+    width: 210px;
+    height: 50px;
+    border-color: #d2d2d2;
+    color: #333;
+    font-size: 16px;
+    line-height: 48px
+}
+
+.mbox7More .mbox4MoreIco:after, .mbox7More .mbox4MoreIco:before {
+    background: #da0502
+}
+
+.active .mbox7List li {
+    opacity: 1;
+    transition: all .8s ease .3s;
+    transform: translate(0, 0) !important
+}
+
+.mbox8 {
+    padding-top: 50px
+}
+
+.mbox8Wrap {
+    margin: 0 auto;
+    height: 490px;
+    max-width: 1060px;
+    transform-style: preserve-3d;
+    perspective: 1000px
+}
+
+.mbox8Left {
+    float: left;
+    padding: 40px 50px;
+    width: 320px;
+    height: 100%;
+    background: rgba(218, 5, 2, .65);
+    box-shadow: -20px 0 20px rgba(0, 0, 0, .2) inset;
+    color: #FFF;
+    transition: all 1s ease 0s;
+    transform: rotateY(-80deg);
+    transform-origin: right center;
+    transform-style: preserve-3d
+}
+
+.mbox8LefEn {
+    padding: 5px 0;
+    color: #FFF;
+    text-align: left;
+    font-size: 30px;
+    font-family: Arial
+}
+
+.mbox8LefCn {
+    padding: 5px 0;
+    text-align: left;
+    font-size: 17px
+}
+
+.mbox8Mes {
+    padding: 30px 0 0
+}
+
+.mbox8Mes li {
+    margin-bottom: 5px
+}
+
+.mbox8Mes li input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    background: 0 0;
+    color: #fff;
+    font-size: 12px;
+    line-height: 50px
+}
+
+.mbox8Mes li textarea {
+    margin-top: 10px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    background: 0 0;
+    color: #fff;
+    font-size: 12px;
+    line-height: 30px;
+    resize: none
+}
+
+.mbox8MesBtn {
+    display: block;
+    margin-top: 20px;
+    width: 110px;
+    height: 36px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    color: #FFF;
+    font-size: 13px;
+    line-height: 34px
+}
+
+.mbox8MesBtn:focus, .mbox8MesBtn:hover {
+    color: #FFF
+}
+
+.mbox8Right {
+    float: right;
+    padding: 60px 15px 0;
+    width: 740px;
+    height: 100%;
+    background: #FFF;
+    background: rgba(255, 255, 255, .95);
+    color: #777;
+    font-size: 12px;
+    line-height: 26px
+}
+
+.mbox8RigEn {
+    padding: 5px 0;
+    color: #da0502;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 26px
+}
+
+.mbox8RigCn {
+    margin: 0 auto;
+    max-width: 330px;
+    color: #333;
+    font-size: 16px;
+    line-height: 30px
+}
+
+.mbox8RigTip {
+    padding: 30px 0;
+    color: #777;
+    font-size: 12px;
+    line-height: 26px
+}
+
+.mbox8RigCon {
+    margin: 0 auto;
+    max-width: 520px;
+    font-size: 0
+}
+
+.mbox8RigCon li {
+    padding: 5px;
+    width: 33.33%;
+    vertical-align: top;
+    font-size: 13px;
+    line-height: 20px
+}
+
+.mbox8RigIco img {
+    margin: 10px auto
+}
+
+.mbox8RigBot {
+    position: relative;
+    margin: 30px auto 0;
+    max-width: 520px
+}
+
+.mbox8RigBot:after, .mbox8RigBot:before {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 200px;
+    height: 1px;
+    background: #bcbcbc;
+    content: "";
+    font-size: 0
+}
+
+.mbox8RigBot:before {
+    left: 0
+}
+
+.mbox8RigBot:after {
+    right: 0
+}
+
+.mbox8RigBot li {
+    position: relative;
+    padding: 0 10px;
+    width: 38px;
+    vertical-align: top;
+    text-align: center
+}
+
+.mbox8RigBot li a {
+    color: #aaa;
+    font-size: 18px;
+    transition: all .5s ease 0s
+}
+
+.mbox8Wx {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    display: none;
+    margin-left: -50px;
+    width: 100px
+}
+
+.mbox8RigBot li a:hover {
+    color: #da0502
+}
+
+.mbox8RigBot li:hover .mbox8Wx {
+    display: block;
+}
+
+.active .mbox8Left, .cut .mbox8Left {
+    transform: rotateY(0)
+}
+
+.footerBg {
+    overflow: visible;
+    background: #111;
+    color: #3c3c3c
+}
+
+.footer {
+    padding: 25px 40px
+}
+
+.footer a {
+    padding: 0 5px;
+    color: #cdcdcd;
+    transition: all .3s ease 0s
+}
+
+.footer span {
+    padding: 0 5px
+}
+
+.footer a:hover {
+    color: #da0502
+}
+
+.footCon {
+    position: relative;
+    padding-right: 200px
+}
+
+.copyright {
+    max-width: 1080px;
+    color: #cdcdcd;
+    font-size: 13px;
+    line-height: 24px
+}
+
+.FtLogo {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    max-width: 190px;
+    transform: translateY(-50%)
+}
+
+.banNews {
+    position: relative;
+    height: 380px
+}
+
+.banNews .imgBg {
+    height: 100%
+}
+
+.banCon {
+    position: absolute;
+    top: 40%;
+    left: 0;
+    padding: 0 15px;
+    width: 100%;
+    color: #FFF
+}
+
+.banEn {
+    padding: 10px 0;
+    font-size: 40px;
+    font-family: Arial
+}
+
+.banCn {
+    font-size: 26px
+}
+
+.mainBg {
+    position: relative;
+    background: #F5F5F5
+}
+
+.news {
+    padding: 60px 0 40px
+}
+
+.newsLef {
+    float: left;
+    width: 69.17%
+}
+
+.newsList {
+    padding: 17px 34px;
+    background: #FFF
+}
+
+.newsList li {
+    padding: 17px 0
+}
+
+.newsTime {
+    float: left;
+    width: 60px
+}
+
+.newsTime span {
+    display: block;
+    width: 60px;
+    height: 60px;
+    color: #FFF;
+    text-align: center;
+    font-family: Arial;
+    line-height: 60px
+}
+
+.newsDate {
+    margin-bottom: 1px;
+    background: #da0502;
+    font-size: 28px
+}
+
+.newsMonth {
+    background: #888;
+    font-size: 18px
+}
+
+.newsText {
+    position: relative;
+    margin-left: 85px
+}
+
+.newsLine {
+    position: absolute;
+    top: 28px;
+    left: -12px;
+    z-index: 1;
+    width: 24px;
+    height: 2px;
+    background: #da0502;
+    font-size: 0
+}
+
+.newsImg {
+    position: relative;
+    overflow: hidden
+}
+
+.newsImg a {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    height: 100%
+}
+
+.newsImg img {
+    width: 100%;
+    transition: all .8s ease 0s
+}
+
+.newsTitBg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 30%;
+    background: linear-gradient(bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, 0) 100%);
+    background: -o-linear-gradient(bottom, rgba(0, 0, 0, .75), rgba(0, 0 0, 0) 100%);
+    background: -ms-linear-gradient(bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, 0) 100%);
+    background: -moz-linear-gradient(bottom, rrgba(0, 0, 0, .75), rgba(0, 0, 0, 0) 100%);
+    background: -webkit-linear-gradient(bottom, rgba(0, 0, 0, .75), rgba(0, 0, 0, 0) 100%)
+}
+
+.newsImg a:hover img {
+    transform: scale(1.02)
+}
+
+.newsTit {
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    padding: 10px 4%;
+    width: 100%;
+    color: #fff;
+    font-size: 22px;
+    line-height: 120%
+}
+
+.newsBrief {
+    padding: 15px 0;
+    color: #777;
+    font-size: 13px;
+    line-height: 24px
+}
+
+.newsTabLef {
+    float: left;
+    margin: 0 -8px
+}
+
+.newsTabLef li {
+    position: relative;
+    padding: 0 8px
+}
+
+.newsTabLef li:after {
+    position: absolute;
+    top: 50%;
+    right: -2px;
+    display: block;
+    margin-top: -2px;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background: #aaa;
+    content: ""
+}
+
+.newsTabLef li:last-child:after {
+    display: none
+}
+
+.newsTabLef li a {
+    padding-bottom: 2px;
+    border-bottom: 1px dotted #AAA;
+    color: #aaa;
+    font-size: 14px;
+    line-height: 26px;
+    transition: all .4s ease 0s
+}
+
+.newsTabLef li a:hover {
+    color: #da0502;
+    border-bottom-color: #da0502
+}
+
+.newsTab #bdshare {
+    float: right;
+    cursor: pointer
+}
+
+.newsTab #bdshare a {
+    display: block;
+    width: 15px;
+    height: 18px;
+    background: url(../images/shareIco1.png) center center no-repeat
+}
+
+.newsLoad {
+    margin: 40px auto 0;
+    width: 200px;
+    height: 46px;
+    background: #e2e2e2;
+    color: #888;
+    font-size: 14px;
+    line-height: 46px;
+    line-height: 46px
+}
+
+.newsLoad .mbox4MoreIco:after, .newsLoad .mbox4MoreIco:before {
+    background: #888
+}
+
+.newsRig {
+    float: right;
+    padding: 10px 34px;
+    width: 28.33%;
+    background: #FFF
+}
+
+.newsRigTit {
+    padding: 20px 0;
+    color: #333;
+    font-size: 22px
+}
+
+.newsRig .newsTit {
+    position: static;
+    padding: 10px 0 5px;
+    color: #666;
+    font-size: 15px;
+    line-height: 22px
+}
+
+.newsRig .newsTit:hover {
+    color: #da0502
+}
+
+.newsRigBot {
+    padding: 0 0 15px;
+    color: #bbb;
+    font-size: 13px
+}
+
+.newsRigTime {
+    float: left
+}
+
+.newsRigTime i {
+    padding-right: 5px
+}
+
+.newsRigBot #bdshare {
+    float: right;
+    cursor: pointer
+}
+
+.newsRigBot #bdshare a {
+    display: block;
+    width: 15px;
+    height: 18px;
+    background: url(../images/shareIco2.png) center center no-repeat
+}
+
+.banShare {
+    position: absolute;
+    top: -51px;
+    overflow: hidden;
+    width: 100%;
+    height: 51px;
+    border-top: 1px solid rgba(255, 255, 255, .3)
+}
+
+.banShareIco {
+    float: left;
+    margin: 0;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    font-size: 0
+}
+
+.banShareIco li {
+    position: relative;
+    margin-right: -1px;
+    padding: 0;
+    border-right: 1px solid rgba(255, 255, 255, .3)
+}
+
+.banShareIco > li > a {
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-position: center center;
+    background-repeat: no-repeat
+}
+
+.banLink {
+    background-image: url(../images/banLink.png)
+}
+
+.banShareBtn {
+    background-image: url(../images/banShare.png)
+}
+
+.banShareList {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    overflow: hidden;
+    width: 0;
+    height: 50px;
+    white-space: nowrap;
+    transition: all .6s ease 0s
+}
+
+.banShareList.active {
+    padding: 0 15px;
+    width: 231px;
+    border-right: 1px solid rgba(255, 255, 255, .3)
+}
+
+.banShareList a {
+    display: inline-block;
+    width: 40px;
+    height: 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    vertical-align: middle
+}
+
+.banShareIco1 {
+    background-image: url(../images/banShareIco1.png)
+}
+
+.banShareIco2 {
+    background-image: url(../images/banShareIco2.png)
+}
+
+.banShareIco3 {
+    background-image: url(../images/banShareIco3.png)
+}
+
+.banShareIco4 {
+    background-image: url(../images/banShareIco4.png)
+}
+
+.banShareIco5 {
+    background-image: url(../images/banShareIco5.png)
+}
+
+.banPage {
+    float: right;
+    height: 100%;
+    font-size: 0
+}
+
+.banPage a {
+    display: inline-block;
+    margin-left: -1px;
+    width: 50px;
+    height: 50px;
+    border-left: 1px solid rgba(255, 255, 255, .3);
+    background-position: center center;
+    background-repeat: no-repeat;
+    vertical-align: middle
+}
+
+.banPrev {
+    background-image: url(../images/banPrev.png)
+}
+
+.banList {
+    background-image: url(../images/banList.png)
+}
+
+.banNext {
+    border-right: 1px solid rgba(255, 255, 255, .3);
+    background-image: url(../images/banNext.png)
+}
+
+.banPage a:hover, .banShareIco > li > a:hover {
+    background-color: #da0502;
+    transition: all .6s ease 0s
+}
+
+.banShareBtn.active {
+    background-color: #da0502
+}
+
+.newsTop {
+    overflow: hidden;
+    padding: 50px 0 0
+}
+
+.newsName {
+    padding: 30px 15px;
+    color: #333;
+    font-size: 28px;
+    line-height: 120%
+}
+
+.newsTime2 {
+    margin: 0 -10px;
+    padding: 14px 15px;
+    border: 1px solid #dbdbdb;
+    border-right: none;
+    border-left: none;
+    color: #999;
+    font-size: 0;
+    line-height: 22px
+}
+
+.newsTime2 span {
+    display: inline-block;
+    padding: 0 10px;
+    vertical-align: middle;
+    font-size: 12px
+}
+
+.newsTime2 i {
+    padding-right: 8px
+}
+
+.newsCon {
+    padding: 30px 0 0;
+    color: #666;
+    font-size: 14px;
+    line-height: 32px
+}
+
+.newsCon p {
+    text-indent: 2em
+}
+
+.newsCon img {
+    margin: 0 auto;
+    height: auto !important;
+    max-width: 100% !important
+}
+
+.newsTab2 {
+    margin: 35px 0;
+    padding-left: 24px;
+    background: url(../images/newsTabBg.png) left 5px no-repeat
+}
+
+.newsTab2 .newsTabLef li a {
+    color: #e51815
+}
+
+.newsTab2 .newsTabLef li:after {
+    background: #e51815
+}
+
+.pageBox {
+    padding-bottom: 30px;
+    line-height: 36px
+}
+
+.pagerBox {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #dbdbdb;
+    border-right: none;
+    border-left: none
+}
+
+.pagerNext, .pagerPrev {
+    position: relative;
+    overflow: hidden;
+    width: 50%;
+    line-height: 70px
+}
+
+.pagerPrev {
+    float: left;
+    padding-right: 40px;
+    padding-left: 60px
+}
+
+.pagerNext {
+    float: right;
+    padding-right: 60px;
+    padding-left: 40px;
+    text-align: right
+}
+
+.pagerTit {
+    position: absolute;
+    top: 1px;
+    color: #777;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 70px
+}
+
+.pagerPrev .pagerTit {
+    left: 0
+}
+
+.pagerNext .pagerTit {
+    right: 0
+}
+
+.pagerNext a, .pagerPrev a {
+    display: inline-block;
+    max-width: 100%;
+    color: #777;
+    vertical-align: middle
+}
+
+.pagerNext a:hover, .pagerPrev a:hover {
+    color: #cf1610
+}
+
+.pagerList {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1;
+    display: block;
+    margin-left: -36px;
+    padding: 30px 0 0;
+    width: 72px;
+    height: 100%;
+    border: 1px solid #dbdbdb;
+    border-top: none;
+    border-bottom: none;
+    transition: all .5s ease 0s
+}
+
+.pagerList span {
+    display: block;
+    margin: 0 auto;
+    width: 20px;
+    height: 2px;
+    background: #aaa;
+    transition: all .5s ease 0s
+}
+
+.pagerList span:first-child + span {
+    margin: 3px auto
+}
+
+.pagerList:hover {
+    background: #cf1610
+}
+
+.pagerList:hover span {
+    background: #FFF
+}
+
+.pagerList:hover span:first-child + span {
+    width: 30px
+}
+
+.hotNews {
+    overflow: hidden;
+    padding: 0 3% 50px
+}
+
+.hotNewsTit {
+    overflow: hidden;
+    padding-bottom: 10px
+}
+
+.hotNewsH2 {
+    float: left;
+    color: #333;
+    font-size: 26px;
+    line-height: 26px
+}
+
+.hotNewsMore {
+    float: right;
+    padding-right: 20px;
+    background: url(../images/hotNews.png) right center no-repeat;
+    color: #666;
+    font-size: 16px;
+    line-height: 26px;
+    transition: all .6s ease 0s
+}
+
+.hotNewsMore:hover {
+    color: #da0502
+}
+
+.hotNewsList {
+    margin: 0 -12px
+}
+
+.hotNewsList li {
+    padding: 12px
+}
+
+.hotNewsList li a {
+    display: block;
+    height: 100%;
+    color: #999;
+    font-size: 12px;
+    line-height: 22px
+}
+
+.hotNewsImg {
+    position: relative;
+    overflow: hidden
+}
+
+.hotNewsImg img {
+    transition: all .8s ease 0s
+}
+
+.hotNewsText {
+    padding: 15px 5%;
+    background: #FFF
+}
+
+.hotNewsTime {
+    color: #bbb;
+    line-height: 36px
+}
+
+.hotNewsName {
+    color: #333;
+    font-size: 15px;
+    line-height: 22px;
+    transition: all .6s ease 0s
+}
+
+.hotNewsLine {
+    display: block;
+    margin: 10px 0;
+    width: 20px;
+    height: 1px;
+    background: #da0502;
+    transition: all .6s ease 0s
+}
+
+.hotNewsBrief {
+    overflow: hidden;
+    margin: 10px 0;
+    height: 44px
+}
+
+.readMore {
+    display: block;
+    color: #333;
+    text-transform: uppercase;
+    font-family: Arial;
+    transition: all .6s ease 0s
+}
+
+.hotNewsList li a:hover .hotNewsImg img {
+    transform: scale(1.05) rotate(1deg)
+}
+
+.hotNewsList li a:hover .hotNewsName {
+    color: #da0502
+}
+
+.hotNewsList li a:hover .hotNewsLine {
+    width: 40px
+}
+
+.hotNewsList li a:hover .readMore {
+    color: #da0502
+}
+
+.caseFenLei {
+    margin: 0 -10px
+}
+
+.caseFenLei li {
+    padding: 0 10px
+}
+
+.caseFenLei li a {
+    display: block;
+    color: #FFF;
+    line-height: 50px;
+    transition: all .5s ease 0s
+}
+
+.caseFenLei li a.active, .caseFenLei li a:hover {
+    color: #ff0400
+}
+
+.caseBox {
+    padding: 48px 3%
+}
+
+.caseList {
+    margin: 0 -.6%
+}
+
+.caseList li {
+    padding: 12px .6%
+}
+
+.caseList li a {
+    display: block;
+    overflow: hidden;
+    height: 100%;
+    transition: all .5s ease 0s
+}
+
+.caseImg {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 67.6%;
+    height: 0
+}
+
+.caseImg .imgBg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: all .5s ease 0s
+}
+
+.caseBrief {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 10px 7%;
+    width: 100%;
+    background: rgba(0, 0, 0, .5);
+    color: #FFF;
+    font-size: 14px;
+    line-height: 30px;
+    transition: all .5s ease 0s;
+    transform: translateY(100%)
+}
+
+.caseText {
+    overflow: hidden;
+    padding: 19px 7%;
+    background: #FFF
+}
+
+.caseIco {
+    float: right;
+    width: 14px;
+    height: 26px;
+    background: url(../images/hotNews.png) center center no-repeat
+}
+
+.caseTit {
+    color: #333;
+    font-size: 16px;
+    line-height: 26px
+}
+
+.caseList li a:hover {
+    box-shadow: 0 0 15px rgba(0, 0, 0, .15)
+}
+
+.caseList li a:hover .imgBg {
+    transform: scale(1.05) rotate(-1deg)
+}
+
+.caseList li a:hover .caseBrief {
+    transform: translateY(0)
+}
+
+.caseList li a:hover .caseIco {
+    animation: swing 1s infinite linear
+}
+
+.hotNewsList li a:hover .imgBg {
+    transform: scale(1.05) rotate(-1deg)
+}
+
+.hotNewsList li a:hover .caseBrief {
+    transform: translateY(0)
+}
+
+.hotNewsList li a:hover .caseIco {
+    animation: swing 1s infinite linear
+}
+
+.banCase {
+    height: 580px
+}
+
+.banCaseCon {
+    position: absolute;
+    bottom: 90px;
+    left: 50%;
+    margin: 0 auto;
+    width: 94%;
+    max-width: 1400px;
+    transform: translateX(-50%)
+}
+
+.banCaseCon .container {
+    padding: 0;
+    width: 100%
+}
+
+.banCaseLine {
+    display: block;
+    margin-bottom: 10px;
+    width: 72px;
+    height: 4px;
+    background: #ff0603
+}
+
+.banCaseTit {
+    padding: 20px 0;
+    color: #FFF;
+    font-size: 36px
+}
+
+.banCaseCon .newsTabLef {
+    float: none
+}
+
+.banCaseCon .newsTabLef a {
+    color: #FFF
+}
+
+.caseShare .container {
+    margin: 0 auto;
+    padding: 0;
+    width: 94%;
+    max-width: 1400px
+}
+
+.caseConBg {
+    margin: 0 auto;
+    padding: 60px 0;
+    width: 94%;
+    max-width: 1400px
+}
+
+.caseCon {
+    padding: 40px 30px;
+    background: #FFF
+}
+
+.caseCon img {
+    display: inline-block;
+    margin: 0 auto;
+    height: auto !important;
+    max-width: 100% !important;
+    vertical-align: middle
+}
+
+.banContact {
+    height: 700px
+}
+
+.contactBg {
+    overflow: hidden;
+    padding: 90px 0
+}
+
+.conTit {
+    overflow: hidden;
+    padding-bottom: 20px;
+    line-height: 26px
+}
+
+.conH2 {
+    float: left;
+    color: #df0024;
+    font-size: 26px;
+    line-height: 26px
+}
+
+.conTip {
+    float: right;
+    color: #777;
+    font-size: 14px
+}
+
+.conTop {
+    padding-bottom: 60px
+}
+
+.conLef {
+    float: left;
+    width: 60%
+}
+
+.conText {
+    color: #777;
+    font-size: 14px;
+    line-height: 28px
+}
+
+.conText strong {
+    padding-right: 20px;
+    color: #555;
+    font-size: 16px
+}
+
+.conTextLef, .conTextRig {
+    max-width: 320px
+}
+
+.conTextRig {
+    line-height: 40px
+}
+
+.conRig {
+    float: right;
+    width: 40%
+}
+
+.mesList li {
+    padding-bottom: 20px
+}
+
+.mesInput {
+    padding: 15px 0 5px;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #cacaca;
+    background: 0 0;
+    line-height: 24px
+}
+
+.mesBtn {
+    display: block;
+    margin-top: 10px;
+    height: 36px;
+    max-width: 110px;
+    background: #da0502;
+    color: #FFF;
+    text-align: center;
+    font-size: 13px;
+    line-height: 36px
+}
+
+.joinList li {
+    position: relative;
+    margin: 15px 0;
+    padding: 38px 250px 38px 325px;
+    background: #FFF
+}
+
+.joinText {
+    overflow: hidden;
+    padding-left: 65px;
+    height: 90px;
+    border-left: 1px solid #eee;
+    color: #888;
+    font-size: 14px;
+    line-height: 30px
+}
+
+.joinCon {
+    padding-bottom: 15px
+}
+
+.joinTip {
+    color: #da0502;
+    font-size: 13px;
+    line-height: 22px
+}
+
+.joinBtn, .joinIco, .joinInfo, .joinTit {
+    position: absolute
+}
+
+.joinTit {
+    top: 60px;
+    left: 0;
+    padding-left: 90px;
+    width: 325px
+}
+
+.joinName {
+    color: #333;
+    font-size: 24px
+}
+
+.joinNameEn {
+    color: #e4403e;
+    font-size: 14px;
+    font-family: Arial;
+    line-height: 200%
+}
+
+.joinInfo {
+    top: 190px;
+    left: 0;
+    display: none;
+    padding-left: 90px;
+    width: 325px;
+    color: #888;
+    font-size: 14px;
+    line-height: 30px
+}
+
+.joinIco {
+    top: 50px;
+    right: 0;
+    width: 250px
+}
+
+.joinIco img {
+    margin: 0 auto
+}
+
+.joinBtn {
+    top: 70px;
+    right: -15px;
+    width: 30px;
+    height: 30px;
+    background: #da0502;
+    cursor: pointer
+}
+
+.joinBtn span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #FFF;
+    transform: translate(-50%, -50%)
+}
+
+.joinBtn span:first-child {
+    width: 12px;
+    height: 1px
+}
+
+.joinBtn span:last-child {
+    width: 1px;
+    height: 12px;
+    transition: all .5s ease 0s
+}
+
+.joinList li.active {
+    min-height: 300px
+}
+
+.joinList li.active .joinText {
+    height: auto
+}
+
+.joinList li.active .joinInfo {
+    display: block
+}
+
+.joinList li.active .joinBtn span:last-child {
+    height: 0
+}
+
+.newsLoad {
+    display: none
+}
+
+#pages {
+    padding: 30px 0 0;
+    text-align: center
+}
+
+#pages a, #pages span {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #333;
+    color: #333;
+    vertical-align: middle
+}
+
+#pages span {
+    border: 1px solid #da0502;
+    background: #da0502;
+    color: #FFF
+}
+
+@media (min-width: 1260px) {
+    .container {
+        width: 1230px
+    }
+}
+
+@media (max-width: 1600px) {
+    .menuBg {
+        width: 50px
+    }
+
+    .mOnLineCon {
+        right: 50px
+    }
+
+    .onLineWx .mOnLineCon {
+        width: 100px
+    }
+
+    .mbox {
+        margin-right: 50px
+    }
+
+    .headerBg {
+        padding: 25px
+    }
+
+    .navTop {
+        padding: 25px
+    }
+
+    .navBot {
+        padding-top: 80px
+    }
+
+    .navList li a {
+        padding: 50px 0 0 15%
+    }
+
+    .navEn {
+        font-size: 24px
+    }
+
+    .navCn, .navTel {
+        font-size: 18px
+    }
+
+    .navList li.text-right {
+        padding: 50px 0 0
+    }
+
+    #navPage li {
+        padding-left: 25px
+    }
+
+    #navPage li.active:first-child:after {
+        width: 80px
+    }
+
+    #navPage li:first-child + li.active:after {
+        width: 80px
+    }
+
+    #navPage li:first-child + li + li.active:after {
+        width: 95px
+    }
+
+    #navPage li:first-child + li + li + li.active:after {
+        width: 70px
+    }
+
+    #navPage li:first-child + li + li + li + li.active:after {
+        width: 115px
+    }
+
+    #navPage li:first-child + li + li + li + li + li.active:after {
+        width: 100px
+    }
+
+    #navPage li:first-child + li + li + li + li + li + li.active:after {
+        width: 80px
+    }
+
+    #navPage li:first-child + li + li + li + li + li + li + li.active:after {
+        width: 100px
+    }
+
+    .welcome {
+        width: 250px;
+        height: 56px;
+        line-height: 56px
+    }
+
+    .banText2 {
+        margin: -270px 0 0 -270px;
+        width: 540px;
+        height: 540px
+    }
+
+    .banImg3 {
+        margin: 40px auto 0
+    }
+
+    .mbox2TitEn {
+        font-size: 32px
+    }
+
+    .mbox2TitCn {
+        font-size: 24px
+    }
+
+    .mbox2Brief {
+        margin: 10px 0
+    }
+
+    .mbox2Num {
+        margin: 20px -20px
+    }
+
+    .mbox2Num li {
+        padding: 5px 20px
+    }
+
+    .mbox2NumSp {
+        font-size: 34px
+    }
+
+    .mbox2Bot {
+        padding: 25px 15px 15px
+    }
+
+    .mbox2Bot:after {
+        right: -100px;
+        width: 100px
+    }
+
+    .mbox2BotH3 {
+        font-size: 14px;
+        line-height: 30px
+    }
+
+    .mbox2More .welcome {
+        width: 200px;
+        height: 44px;
+        line-height: 44px
+    }
+
+    .mbox3 {
+        margin: 0 auto;
+        max-width: 1000px
+    }
+
+    .mbox3Tit {
+        margin-bottom: 20px;
+        margin-left: 100px
+    }
+
+    .mbox3LefItem li {
+        padding-bottom: 20px
+    }
+
+    .mbox3LefItem li:after {
+        left: 14px;
+        height: 20px
+    }
+
+    .mbox3LefItem li a {
+        padding: 3px 0
+    }
+
+    .mbox3Ico {
+        width: 30px
+    }
+
+    .mbox3H3 {
+        margin: 0;
+        font-size: 14px
+    }
+
+    .mbox3Line {
+        margin: 6px 10px 0
+    }
+
+    .mbox3LefItem li.active a .mbox3Line {
+        width: 65px
+    }
+
+    .mbox3Rig {
+        min-height: 190px
+    }
+
+    .box3RigText {
+        right: 40px;
+        bottom: 40px;
+        padding: 25px 40px
+    }
+
+    .mbox4LefItem {
+        margin: 10px 0 20px
+    }
+
+    .mbox4LefItem li a {
+        padding: 5px 0
+    }
+
+    .mbox4List {
+        padding: 50px
+    }
+
+    .mbox4List .swiper-slide {
+        padding: 10px
+    }
+
+    .mbox4Text {
+        padding: 5px 10px
+    }
+
+    .mbox5List .swiper-container {
+        padding: 20px 0 10px
+    }
+
+    .mbox6TitEn {
+        font-size: 24px
+    }
+
+    .mbox6TitCn {
+        font-size: 28px
+    }
+
+    .mbox6Text {
+        margin: 50px auto
+    }
+
+
+    .mbox7List {
+        margin: 25px auto;
+        max-width: 80%
+    }
+
+    .mbox7List li a {
+        min-height: 164px
+    }
+
+    .mbox7Text {
+        padding: 20px
+    }
+
+    .mbox8Wrap {
+        height: 430px
+    }
+
+    .mbox8Mes {
+        padding: 20px 0 0
+    }
+
+    .mbox8Right {
+        padding: 40px 15px 0
+    }
+
+    .footer {
+        padding: 15px
+    }
+
+    .banNews {
+        height: 350px
+    }
+
+    .banEn {
+        font-size: 32px
+    }
+
+    .banCn {
+        font-size: 20px
+    }
+
+    .news {
+        padding: 40px 0 30px
+    }
+
+    .newsList {
+        padding: 15px 25px
+    }
+
+    .newsRig {
+        padding: 10px 25px
+    }
+
+    .newsLoad {
+        margin: 30px auto 0
+    }
+
+    .newsTop {
+        padding: 30px 0 0
+    }
+
+    .newsName {
+        padding: 20px 15px;
+        font-size: 24px
+    }
+
+    .hotNewsH2 {
+        font-size: 22px
+    }
+
+    .hotNewsMore {
+        padding-right: 15px;
+        background-size: 10px;
+        font-size: 14px
+    }
+
+    .hotNewsList {
+        margin: 0 -6px
+    }
+
+    .hotNewsList li {
+        padding: 6px
+    }
+
+    .hotNewsText {
+        padding: 10px
+    }
+
+    .hotNewsTime {
+        line-height: 26px
+    }
+
+    .caseBox {
+        padding: 30px 2%
+    }
+
+    .caseList {
+        margin: 0 -.5%
+    }
+
+    .caseList li {
+        padding: 5px .5%
+    }
+
+    .caseBrief {
+        padding: 5px 5%
+    }
+
+    .caseText {
+        padding: 14px 5%
+    }
+
+    .caseTit {
+        font-size: 14px
+    }
+
+    .banCase {
+        height: 550px
+    }
+
+    .banCaseTit {
+        padding: 15px 0;
+        font-size: 32px
+    }
+
+    .caseConBg {
+        padding: 40px 0
+    }
+
+    .caseCon {
+        padding: 30px 20px
+    }
+
+    .banContact {
+        height: 550px
+    }
+
+    .contactBg {
+        padding: 60px 0
+    }
+
+    .conTop {
+        padding-bottom: 30px
+    }
+
+    .conTit {
+        padding-bottom: 10px
+    }
+
+    .conH2 {
+        font-size: 22px
+    }
+
+    .joinList li {
+        padding: 30px 250px 30px 325px
+    }
+}
+
+@media (max-width: 1400px) {
+    .navEn {
+        font-size: 20px
+    }
+
+    .navCn, .navTel {
+        font-size: 16px
+    }
+
+    .navList li.text-right {
+        line-height: 28px
+    }
+
+    .navBotCon {
+        bottom: 15px
+    }
+
+    .banText2 {
+        margin: -200px 0 0 -200px;
+        width: 400px;
+        height: 400px
+    }
+
+    .mbox2Text {
+        padding-left: 10%
+    }
+
+    .mbox2TitEn {
+        font-size: 28px;
+        line-height: 100%
+    }
+
+    .mbox2TitCn {
+        font-size: 20px;
+        line-height: 100%
+    }
+
+    .mbox2Num {
+        margin: 10px -10px
+    }
+
+    .mbox2Num li {
+        padding: 5px 10px
+    }
+
+    .mbox2NumSp {
+        font-size: 26px
+    }
+
+    .mbox2Bot {
+        padding: 15px 10px 5px
+    }
+
+    .mbox3 {
+        max-width: 900px
+    }
+
+    .mbox3Tit {
+        margin-left: 40px
+    }
+
+    .mbox3H4 {
+        font-size: 20px;
+        line-height: 110%
+    }
+
+    .box3RigImg img {
+        max-width: 65%
+    }
+
+    .box3RigText {
+        padding: 25px
+    }
+
+    .mbox4List {
+        padding: 50px 25px 25px
+    }
+
+    .mbox4List .swiper-slide {
+        padding: 5px
+    }
+
+    .mbox4More {
+        width: 130px;
+        height: 34px;
+        line-height: 34px
+    }
+
+    .mbox5List {
+        max-width: 70%
+    }
+
+    .mbox6TitEn {
+        font-size: 22px
+    }
+
+    .mbox6TitCn {
+        font-size: 24px
+    }
+
+    .mbox6Text {
+        margin: 40px auto;
+        padding: 35px;
+        max-width: 560px;
+        font-size: 14px;
+        line-height: 30px
+    }
+
+    .mbox6Text:after, .mbox6Text:before {
+        width: 60px
+    }
+
+    .mbox6Text:after {
+        top: 100px;
+        left: -60px
+    }
+
+    .mbox6Link {
+        bottom: -19px;
+        margin-left: -70px;
+        width: 140px;
+        line-height: 38px
+    }
+
+
+    .mbox7More {
+        width: 180px;
+        height: 40px;
+        font-size: 14px;
+        line-height: 40px
+    }
+
+    .mbox8Wrap {
+        height: 380px;
+        max-width: 840px
+    }
+
+    .mbox8Left {
+        padding: 20px 30px;
+        width: 250px
+    }
+
+    .mbox8LefEn {
+        font-size: 24px
+    }
+
+    .mbox8LefCn {
+        font-size: 16px
+    }
+
+    .mbox8Mes li input {
+        line-height: 40px
+    }
+
+    .mbox8Right {
+        padding: 30px 15px 0;
+        width: 590px
+    }
+
+    .mbox8RigTip {
+        padding: 20px 0
+    }
+
+    .mbox8RigCn {
+        max-width: 290px;
+        font-size: 14px;
+        line-height: 22px
+    }
+
+    .mbox8RigEn {
+        font-size: 18px;
+        line-height: 24px
+    }
+
+    .mbox8RigBot {
+        margin: 20px auto 0
+    }
+
+    .footCon {
+        padding-right: 160px
+    }
+
+    .FtLogo {
+        max-width: 150px
+    }
+
+    .joinList {
+        padding: 0 15px 0 0
+    }
+}
+
+@media (max-width: 1200px) {
+    .menuBg {
+        padding: 15px 0 0
+    }
+
+    .headerBg {
+        padding: 15px
+    }
+
+    .logo {
+        height: 20px;
+        max-width: 190px
+    }
+
+    .navClose {
+        padding: 0;
+        height: 20px
+    }
+
+    .navTop {
+        padding: 15px
+    }
+
+    .navBot {
+        padding-top: 50px
+    }
+
+    .navEn {
+        font-size: 18px
+    }
+
+    .navCn, .navTel {
+        font-size: 14px
+    }
+
+    .navList li.text-right {
+        font-size: 12px
+    }
+
+    #navPage li {
+        padding-left: 15px
+    }
+
+    #navPage li.active:first-child:after {
+        width: 70px
+    }
+
+    #navPage li:first-child + li.active:after {
+        width: 70px
+    }
+
+    #navPage li:first-child + li + li.active:after {
+        width: 85px
+    }
+
+    #navPage li:first-child + li + li + li.active:after {
+        width: 60px
+    }
+
+    #navPage li:first-child + li + li + li + li.active:after {
+        width: 105px
+    }
+
+    #navPage li:first-child + li + li + li + li + li.active:after {
+        width: 90px
+    }
+
+    #navPage li:first-child + li + li + li + li + li + li.active:after {
+        width: 70px
+    }
+
+    #navPage li:first-child + li + li + li + li + li + li + li.active:after {
+        width: 90px
+    }
+
+    #navPage li a {
+        line-height: 24px
+    }
+
+    .banText {
+        width: 350px
+    }
+
+    .banBorder1 {
+        right: -35px;
+        width: 140px;
+        height: 240px
+    }
+
+    .ban1Line1 {
+        bottom: 214px
+    }
+
+    .ban1Line2 {
+        width: 138px
+    }
+
+    .ban1Line3 {
+        height: 238px
+    }
+
+    .ban1Line4 {
+        width: 138px
+    }
+
+    .ban1Line5 {
+        height: 155px
+    }
+
+    .mbox3Brief {
+        display: none
+    }
+
+    .mbox3LefItem li {
+        padding-bottom: 10px
+    }
+
+    .mbox3LefItem li:after {
+        height: 15px
+    }
+
+    .mbox4List {
+        padding: 50px 10px 5px
+    }
+
+    .mbox4List .swiper-slide {
+        padding: 2px
+    }
+
+    .banNews {
+        height: 300px
+    }
+
+    .newsList {
+        padding: 25px 15px
+    }
+
+    .newsRig {
+        padding: 15px 15px
+    }
+
+    .newsList li {
+        padding: 10px 0
+    }
+
+    .newsTabLef li {
+        padding: 0 8px
+    }
+
+    .newsTime {
+        width: 50px
+    }
+
+    .newsTime span {
+        width: 50px;
+        height: 50px;
+        line-height: 50px
+    }
+
+    .newsText {
+        margin-left: 75px
+    }
+
+    .newsTit {
+        padding: 5px 3%;
+        font-size: 20px
+    }
+
+    .newsRigTit {
+        padding: 15px 0;
+        font-size: 20px
+    }
+
+    .pagerNext, .pagerPrev, .pagerTit {
+        line-height: 50px
+    }
+
+    .pagerList {
+        margin-left: -25px;
+        padding: 20px 0 0;
+        width: 50px
+    }
+
+    .hotNews {
+        padding: 0 2% 30px
+    }
+
+    .hotNewsList li:nth-child(4) {
+        display: none
+    }
+
+    .banCase {
+        height: 450px
+    }
+
+    .banCaseTit {
+        padding: 10px 0;
+        font-size: 26px
+    }
+
+    .caseConBg {
+        padding: 30px 0
+    }
+
+    .caseCon {
+        padding: 15px 10px
+    }
+
+    .banContact {
+        height: 400px
+    }
+
+    .conH2 {
+        font-size: 20px
+    }
+
+    .conText {
+        margin: 0 -5px
+    }
+
+    .conTextLef, .conTextRig {
+        padding: 0 5px
+    }
+
+    .conText strong {
+        padding-right: 10px
+    }
+
+    .joinList li {
+        padding: 25px 150px 25px 280px
+    }
+
+    .joinInfo, .joinTit {
+        padding-left: 50px;
+        width: 280px
+    }
+
+    .joinTit {
+        top: 45px
+    }
+
+    .joinName {
+        font-size: 22px
+    }
+
+    .joinIco {
+        top: 30px;
+        width: 150px
+    }
+
+    .joinBtn {
+        top: 50px
+    }
+
+    .joinText {
+        padding-left: 25px
+    }
+}
+
+@media (max-width: 992px) {
+    .menuBg {
+        position: static;
+        padding: 0;
+        width: auto;
+        height: auto
+    }
+
+    .menuBtn {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        z-index: 2
+    }
+
+    .menuBtn img {
+        display: none
+    }
+
+    .mBtnLine {
+        width: 20px;
+        text-align: left
+    }
+
+    .mBtnLine span {
+        width: 100%;
+        height: 2px;
+        background: #FFF
+    }
+
+    .mBtnLine span:nth-child(2) {
+        margin: 5px 0;
+        width: 80%
+    }
+
+    .mOnLine {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        width: 50px
+    }
+
+    .header {
+        margin-right: 50px
+    }
+
+    .mbox {
+        margin-right: 0
+    }
+
+    #navPage {
+        display: none
+    }
+
+    .navBot {
+        padding-bottom: 150px
+    }
+
+    .navList {
+        overflow-y: auto;
+        padding: 10px 0 0
+    }
+
+    .navList li {
+        float: none;
+        width: 100%;
+        height: auto
+    }
+
+    .navList li a, .navList li a:hover {
+        padding: 5px 15px;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, .08)
+    }
+
+    .navList li a span {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 14px
+    }
+
+    .navEn {
+        padding-right: 10px;
+        min-width: 70px
+    }
+
+    .navList li.text-right {
+        padding: 5px 15px;
+        width: 100%;
+        line-height: 24px
+    }
+
+    .navBotCon {
+        position: static;
+        padding: 0 15px 15px;
+        width: 100%
+    }
+
+    .banText3 {
+        max-width: 90%
+    }
+
+    .box2ImgBg {
+        width: 100%;
+        opacity: .1
+    }
+
+    .fp-viewing-page2 .tel {
+        color: #da0502
+    }
+
+    .fp-viewing-page2 .telIco {
+        background-image: url(../images/telRed.html)
+    }
+
+    .fp-viewing-page2 .mBtnLine span {
+        background: #da0502
+    }
+
+    .mbox2Text {
+        position: relative;
+        z-index: 1;
+        padding: 40px 15px 0;
+        width: 100%
+    }
+
+    .mbox2Text .mbox2TitEn {
+        font-size: 38px;
+        line-height: 120%
+    }
+
+    .mbox2Text .mbox2TitCn {
+        font-size: 24px;
+        line-height: 120%
+    }
+
+    .mbox2Bot:after {
+        display: none
+    }
+
+    .mbox3 {
+        padding: 0 15px;
+        width: 100%;
+        max-width: 100%
+    }
+
+    .mbox3Lef {
+        float: none;
+        padding-bottom: 30px;
+        width: 100%
+    }
+
+    .mbox3LefCon {
+        padding-left: 40px
+    }
+
+    .mbox3Rig {
+        float: none;
+        overflow: hidden;
+        width: 100%
+    }
+
+    .mbox3Tit .mbox2TitEn {
+        font-size: 24px
+    }
+
+    .mbox3Tit .mbox2TitCn {
+        font-size: 18px
+    }
+
+    .mbox3H4 img {
+        display: inline !important;
+        max-width: 25px
+    }
+
+    .box3RigText {
+        position: relative;
+        right: auto;
+        bottom: auto;
+        background: rgba(255, 255, 255, .9)
+    }
+
+    .box3RigImg {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        width: 100%;
+        transform: translateY(-50%)
+    }
+
+    .box3RigImg img {
+        float: none;
+        width: 100%;
+        max-width: 100%
+    }
+
+    .fp-viewing-page4 .logo img.shows {
+        display: none
+    }
+
+    .fp-viewing-page4 .logo img.hides {
+        display: block
+    }
+
+    .fp-viewing-page4.active .logo img.shows {
+        display: block
+    }
+
+    .fp-viewing-page4.active .logo img.hides {
+        display: none
+    }
+
+    .mbox4LefBtn {
+        position: absolute;
+        top: 52px;
+        left: 12px;
+        z-index: 3;
+        width: 30px;
+        height: 30px;
+        border-radius: 2px;
+        background: #da0502;
+        color: #fff;
+        text-align: center;
+        font-size: 18px;
+        line-height: 30px;
+        cursor: pointer
+    }
+
+    .mbox4Lef {
+        left: -250px;
+        z-index: 2;
+        width: 250px;
+        transition: all .6s ease 0s
+    }
+
+    .mbox4Lef.active {
+        left: 0
+    }
+
+    .mbox4LefCon {
+        padding-left: 30px
+    }
+
+    .mbox4 {
+        margin: 0
+    }
+
+    .mbox5List {
+        max-width: 90%
+    }
+
+    .mbox5Bot {
+        padding: 0 50px
+    }
+
+    .mbox5Btn .mbox5Line {
+        display: none
+    }
+
+    .mbox5Bot .swiper-pagination-bullet {
+        margin: 0 2px;
+        width: 20px;
+        height: 2px
+    }
+
+    .mbox7List li {
+        width: 100%
+    }
+
+    .mbox7List li:nth-child(2) a {
+        padding-right: 50%;
+        padding-left: 0
+    }
+
+    .mbox7List li:nth-child(3) a {
+        padding-right: 0;
+        padding-left: 50%
+    }
+
+    .mbox7List li:nth-child(2) .mbox7Img {
+        right: 0;
+        left: auto
+    }
+
+    .mbox7List li:nth-child(3) .mbox7Img {
+        right: auto;
+        left: 0
+    }
+
+    .mbox8Wrap {
+        padding: 0 15px;
+        height: auto;
+        max-width: 100%
+    }
+
+    .mbox8Left {
+        float: none;
+        width: 100%;
+        box-shadow: none;
+        transform: rotateY(0)
+    }
+
+    .mbox8Right {
+        float: none;
+        padding: 15px;
+        width: 100%;
+        transform: rotateY(0)
+    }
+
+    .footCon {
+        padding: 0;
+        text-align: center
+    }
+
+    .copyright {
+        padding-bottom: 10px;
+        text-align: center
+    }
+
+    .FtLogo {
+        position: static;
+        margin: 0 auto;
+        transform: translateY(0)
+    }
+
+    .banNews {
+        height: 260px
+    }
+
+    .banEn {
+        padding: 5px 0;
+        font-size: 26px
+    }
+
+    .banCn {
+        font-size: 17px
+    }
+
+    .news {
+        padding: 30px 0
+    }
+
+    .newsLef, .newsRig {
+        float: none;
+        width: 100%
+    }
+
+    .newsLoad {
+        margin: 25px auto
+    }
+
+    .newsRigTit {
+        padding: 10px 0;
+        font-size: 18px
+    }
+
+    .newsRigList {
+        overflow: hidden;
+        margin: 0 -5px
+    }
+
+    .newsRigList li {
+        float: left;
+        padding: 5px;
+        width: 50%
+    }
+
+    .newsRigList li:nth-child(5) {
+        display: none
+    }
+
+    .newsRigBot {
+        padding-bottom: 0
+    }
+
+    .newsName {
+        padding: 10px 15px;
+        font-size: 22px
+    }
+
+    .newsCon {
+        line-height: 30px
+    }
+
+    .newsTab2 {
+        margin: 28px 0
+    }
+
+    .hotNewsList li:nth-child(4) {
+        display: block
+    }
+
+    .banCase {
+        height: 360px
+    }
+
+    .banCaseCon {
+        bottom: 70px
+    }
+
+    .banCaseLine {
+        margin-bottom: 5px;
+        width: 40px;
+        height: 2px
+    }
+
+    .banCaseTit {
+        font-size: 22px
+    }
+
+    .banContact {
+        height: 340px
+    }
+
+    .contactBg {
+        padding: 30px 0
+    }
+
+    .conTop {
+        padding-bottom: 10px
+    }
+
+    .conTit {
+        padding: 10px 0
+    }
+
+    .conLef, .conRig {
+        float: none;
+        width: 100%
+    }
+
+    .conLef {
+        padding-bottom: 10px
+    }
+
+    .conH2, .conTip {
+        float: none;
+        display: block;
+        width: 100%
+    }
+
+    .joinList li {
+        margin: 10px 0;
+        padding: 15px 10px 10px
+    }
+
+    .joinTit {
+        position: static;
+        padding-left: 0;
+        width: 90%
+    }
+
+    .joinInfo {
+        position: static;
+        margin: 0 -5px;
+        padding-bottom: 10px;
+        padding-left: 0;
+        width: 100%
+    }
+
+    .joinInfo p {
+        display: inline-block;
+        padding: 0 5px;
+        vertical-align: middle
+    }
+
+    .joinText {
+        padding-left: 0;
+        height: 0;
+        border: none
+    }
+
+    .joinIco {
+        top: 20px;
+        width: 100px
+    }
+
+    .joinIco img {
+        max-width: 40%
+    }
+
+    .joinBtn {
+        top: 25px
+    }
+
+    #pages {
+        padding: 20px 0
+    }
+}
+
+@media (max-width: 767px) {
+    .banImg3 {
+        margin: 20px auto 0
+    }
+
+    .swiper-slide-active .banBg3:after {
+        width: 100%
+    }
+
+    .mbox7List {
+        padding: 0 15px;
+        max-width: 100%
+    }
+
+    .mbox7Img {
+        width: 30%
+    }
+
+    .mbox7List li a {
+        min-height: 0
+    }
+
+    .mbox7List li:nth-child(2n) a {
+        padding-right: 30%;
+        padding-left: 0
+    }
+
+    .mbox7List li:nth-child(2n+1) a {
+        padding-right: 0;
+        padding-left: 30%
+    }
+
+    .mbox7Ico {
+        left: 30%
+    }
+
+    .mbox7List li:nth-child(2n) a .mbox7Ico {
+        left: 70%
+    }
+
+    .mbox7Text {
+        padding: 15px
+    }
+
+    .mbox7Name {
+        overflow: hidden;
+        width: 100%;
+        height: 22px;
+        text-overflow: ellipsis;
+        white-space: nowrap
+    }
+
+    .newsTime2 {
+        padding: 7px 10px
+    }
+
+    .newsCon {
+        padding: 20px 0 0
+    }
+
+    .newsTab2 {
+        margin: 20px 0
+    }
+
+    .pagerBox {
+        padding: 5px 0
+    }
+
+    .pagerNext, .pagerPrev {
+        float: none;
+        padding-right: 0;
+        padding-left: 55px;
+        width: 100%
+    }
+
+    .pagerNext, .pagerPrev, .pagerTit {
+        line-height: 30px
+    }
+
+    .pagerNext {
+        text-align: left
+    }
+
+    .pagerNext .pagerTit {
+        right: auto;
+        left: 0
+    }
+
+    .pagerNext a, .pagerPrev a {
+        display: block
+    }
+
+    .pagerTit {
+        top: 0
+    }
+
+    .pagerTit i {
+        display: none
+    }
+
+    .pagerList {
+        position: static;
+        margin: 2px 0;
+        padding: 10px 0;
+        width: 100%;
+        border: 1px solid #DEDEDE;
+        border-right: none;
+        border-left: none
+    }
+
+    .hotNews {
+        padding: 0 15px 25px
+    }
+
+    .caseBox {
+        padding: 15px
+    }
+
+    .conTextLef, .conTextRig {
+        max-width: 100%
+    }
+
+    .mesInput {
+        padding: 10px 0 5px
+    }
+
+    .joinName {
+        font-size: 18px
+    }
+
+    .joinNameEn {
+        font-size: 12px
+    }
+
+    .joinIco {
+        top: 15px
+    }
+
+    .joinBtn {
+        top: 20px
+    }
+}
+
+@media (max-width: 640px) {
+    .menuBtn {
+        top: 15px;
+        right: 15px
+    }
+
+    .navClose {
+        width: 22px
+    }
+
+    .navClose span:last-child {
+        margin-top: 15px
+    }
+
+    .header {
+        margin-right: 40px
+    }
+
+    .navBot {
+        padding-bottom: 85px
+    }
+
+    .logo {
+        height: 16px;
+        max-width: 152px
+    }
+
+    .tel {
+        font-size: 16px;
+        line-height: 16px
+    }
+
+    .navBotCon p {
+        display: none
+    }
+
+    .mbox1 .swiper-pagination {
+        bottom: 2%
+    }
+
+    .welcome {
+        left: 0;
+        width: 170px;
+        height: 46px;
+        font-size: 12px;
+        line-height: 46px
+    }
+
+    .welcome i, .welcome span, .welcome strong {
+        margin: 0
+    }
+
+    .welcome:hover .welcomeLine {
+        width: 30px
+    }
+
+    .banBorder1 {
+        display: none
+    }
+
+    .banText {
+        bottom: 35%;
+        left: 10%;
+        width: 80%
+    }
+
+    .ban1Line {
+        margin: 10px 0
+    }
+
+    .banTextCir {
+        display: none
+    }
+
+    .banText2 {
+        margin: 0;
+        margin-left: 5%;
+        width: 90%;
+        transform: translate(-50%, -50%)
+    }
+
+    .mbox2TitEn {
+        font-size: 26px
+    }
+
+    .mbox2TitCn {
+        font-size: 20px
+    }
+
+    .mbox2Img {
+        margin: 0 auto 5px;
+        max-width: 40%
+    }
+
+    .mbox3Lef {
+        padding: 0
+    }
+
+    .mbox3Tit {
+        margin-left: 0
+    }
+
+    .mbox3LefCon {
+        display: none
+    }
+
+    .box3RigText {
+        padding: 15px
+    }
+
+    .mbox3Con {
+        margin: 10px 0;
+        height: auto
+    }
+
+    .mbox4List .swiper-slide {
+        width: 50%
+    }
+
+    .mbox5Bot {
+        padding: 0
+    }
+
+    .mbox5Btn {
+        position: static;
+        display: inline-block;
+        padding: 10px 0;
+        vertical-align: middle;
+        font-size: 14px;
+        transform: translateY(0)
+    }
+
+    .mbox5Bot .swiper-pagination {
+        display: block;
+        width: 100%
+    }
+
+    .mbox6Text {
+        max-width: 100%
+    }
+
+    .mbox6Top {
+        margin: -30px 0 0 -5px;
+        height: 60px
+    }
+
+    .mbox6Line {
+        height: 30px
+    }
+
+
+    .mbox7List {
+        margin: 15px auto
+    }
+
+    .mbox7Time {
+        height: 26px;
+        line-height: 26px
+    }
+
+    .mbox7Brief {
+        display: none
+    }
+
+    .mbox7Ico {
+        top: 30%
+    }
+
+    .mbox8LefEn {
+        font-size: 18px
+    }
+
+    .mbox8LefCn {
+        padding: 0;
+        font-size: 14px
+    }
+
+    .mbox8Mes {
+        padding: 5px 0 0
+    }
+
+    .mbox8Mes li input {
+        line-height: 36px
+    }
+
+    .mbox8Mes li textarea {
+        margin: 0
+    }
+
+    .mbox8MesBtn {
+        margin-top: 10px;
+        width: 100px;
+        height: 28px;
+        line-height: 26px
+    }
+
+    .mbox8RigCn {
+        display: none
+    }
+
+    .mbox8RigTip {
+        display: none
+    }
+
+    .mbox8RigIco img {
+        max-width: 20%
+    }
+
+    .mbox8RigBot:after, .mbox8RigBot:before {
+        display: none
+    }
+
+    .banNews {
+        height: 230px
+    }
+
+    .newsTime {
+        width: 40px
+    }
+
+    .newsTime span {
+        width: 40px;
+        height: 40px;
+        line-height: 40px
+    }
+
+    .newsDate {
+        font-size: 22px
+    }
+
+    .newsMonth {
+        font-size: 16px
+    }
+
+    .newsText {
+        margin-left: 55px
+    }
+
+    .newsTit {
+        font-size: 16px
+    }
+
+    .newsBrief {
+        overflow: hidden;
+        margin: 10px 0;
+        padding: 0;
+        max-height: 72px
+    }
+
+    .newsRig .newsTit {
+        padding: 5px 0;
+        font-size: 14px
+    }
+
+    .newsRigBot #bdshare, .newsTab #bdshare {
+        display: none
+    }
+
+    .banShare {
+        position: static;
+        height: auto;
+        text-align: center
+    }
+
+    .banShare .container {
+        padding: 0;
+        font-size: 0
+    }
+
+    .banShareIco {
+        float: none;
+        display: inline-block;
+        background: #da0502;
+        vertical-align: middle
+    }
+
+    .banShareIco > li > a {
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-size: 12px;
+        vertical-align: middle
+    }
+
+    .banShareList {
+        position: static;
+        display: inline-block;
+        width: auto;
+        height: 36px;
+        vertical-align: middle
+    }
+
+    .banShareList a {
+        width: 36px;
+        background-color: #da0502;
+        background-size: 15px
+    }
+
+    .banPage {
+        float: none;
+        display: inline-block;
+        background: #da0502;
+        vertical-align: middle
+    }
+
+    .banPage a {
+        width: 36px;
+        height: 36px;
+        background-size: 15px
+    }
+
+    .newsTop {
+        padding: 20px 0 0
+    }
+
+    .newsName {
+        font-size: 18px
+    }
+
+    .newsCon {
+        padding: 10px 0 0
+    }
+
+    .hotNewsH2 {
+        font-size: 18px
+    }
+
+    .hotNewsName {
+        font-size: 14px
+    }
+
+    .hotNewsLine {
+        margin: 5px 0
+    }
+
+    .hotNewsBrief {
+        margin: 5px 0
+    }
+
+    .caseFenLei {
+        margin: 0 -3px;
+        padding: 8px 0;
+        background: #F5F5F5
+    }
+
+    .caseFenLei li {
+        padding: 0 3px
+    }
+
+    .caseFenLei li a {
+        color: #333;
+        line-height: 24px
+    }
+
+    .caseBox {
+        padding: 0 15px 1px
+    }
+
+    .banCase {
+        height: 300px
+    }
+
+    .banCaseCon {
+        bottom: 20px
+    }
+
+    .banCaseLine {
+        margin-bottom: 5px;
+        width: 40px;
+        height: 2px
+    }
+
+    .banCaseTit {
+        font-size: 19px
+    }
+
+    .caseShare .container {
+        width: 100%
+    }
+
+    .caseConBg {
+        padding: 3px 0 15px
+    }
+
+    .banContact {
+        height: 300px
+    }
+
+    .conTit {
+        padding: 5px 0
+    }
+
+    .conH2 {
+        font-size: 18px
+    }
+
+    .conText strong {
+        font-size: 14px
+    }
+
+    .conTextRig {
+        line-height: 30px
+    }
+}
+
+@media (max-width: 460px) {
+    .tel span {
+        display: none
+    }
+
+    .tel a {
+        display: block
+    }
+
+    .mbox1 .swiper-pagination-bullet {
+        margin: 0 2px !important;
+        width: 20px
+    }
+
+    .mbox2TitEn {
+        font-size: 18px
+    }
+
+    .mbox2TitCn {
+        font-size: 16px
+    }
+
+    .mbox2Num {
+        margin: 5px -5px;
+        line-height: 22px
+    }
+
+    .mbox2NumSp {
+        font-size: 20px
+    }
+
+    .mbox2Num li {
+        padding: 5px
+    }
+
+    .mbox2Brief {
+        max-height: 104px;
+        line-height: 26px
+    }
+
+    .mbox2BotH3 {
+        font-size: 12px;
+        line-height: 20px
+    }
+
+    .mbox2More .welcome {
+        width: 140px;
+        height: 38px;
+        line-height: 38px
+    }
+
+    .mbox3Tit .mbox2TitEn {
+        font-size: 18px
+    }
+
+    .mbox3Tit .mbox2TitCn {
+        font-size: 16px
+    }
+
+    .mbox3H4 {
+        font-size: 18px
+    }
+
+    .mbox6TitEn {
+        font-size: 18px;
+        line-height: 120%
+    }
+
+    .mbox6TitCn {
+        font-size: 20px;
+        line-height: 120%
+    }
+
+    .f16 {
+        font-size: 14px
+    }
+
+    .f24 {
+        font-size: 20px
+    }
+
+    .f28 {
+        font-size: 24px
+    }
+
+    .mbox6Text {
+        margin: 30px auto;
+        padding: 25px 15px
+    }
+
+    .mbox6Text:before {
+        top: 0;
+        left: 0
+    }
+
+    .mbox6Ico {
+        right: 0;
+        bottom: -6px
+    }
+
+    .mbox8Left {
+        padding: 10px 20px
+    }
+
+    .mbox8Mes li:nth-child(1), .mbox8Mes li:nth-child(2) {
+        display: inline-block;
+        width: 48%;
+        vertical-align: middle
+    }
+
+    .mbox8RigEn {
+        font-size: 16px;
+        line-height: 16px
+    }
+
+    .mbox8RigIco {
+        display: inline-block;
+        max-width: 20px;
+        vertical-align: middle
+    }
+
+    .mbox8RigIco img {
+        margin: 0 auto;
+        max-width: 100%
+    }
+
+    .mbox8RigCon li {
+        width: 100%
+    }
+
+    .mbox8RigCon li p {
+        display: inline
+    }
+
+    .mbox8RigBot {
+        margin: 10px auto 0
+    }
+
+    .mbox8RigBot li a {
+        font-size: 16px
+    }
+
+    .banNews {
+        height: 200px
+    }
+
+    .banEn {
+        padding: 0;
+        font-size: 20px
+    }
+
+    .banCn {
+        font-size: 14px
+    }
+
+    .newsList li {
+        padding: 5px 0
+    }
+
+    .newsTabLef li {
+        padding: 0 5px
+    }
+
+    .newsTabLef li a {
+        font-size: 12px
+    }
+
+    .newsTime {
+        width: 30px
+    }
+
+    .newsTime span {
+        width: 30px;
+        height: 30px;
+        line-height: 30px
+    }
+
+    .newsDate {
+        font-size: 18px
+    }
+
+    .newsMonth {
+        font-size: 14px
+    }
+
+    .newsText {
+        margin-left: 40px
+    }
+
+    .newsLine {
+        top: 15px;
+        left: -7px;
+        width: 14px
+    }
+
+    .newsLine {
+        bottom: 5px;
+        font-size: 14px
+    }
+
+    .newsBrief {
+        margin: 5px 0
+    }
+
+    .newsRigList li {
+        float: none;
+        width: 100%
+    }
+
+    .hotNewsList li {
+        width: 100%
+    }
+
+    .caseList li {
+        width: 100%
+    }
+
+    .banCase {
+        height: 240px
+    }
+
+    .banContact {
+        height: 260px
+    }
+
+    #pages a, #pages span {
+        padding: 1px 6px
+    }
+}
+
+@media (max-width: 360px) {
+    .mbox7 {
+        padding-top: 50px
+    }
+
+    .mbox7List li:nth-child(4) {
+        display: none
+    }
+
+    .mbox7More {
+        width: 160px;
+        height: 36px;
+        font-size: 12px;
+        line-height: 36px
+    }
+
+    .banShareList a {
+        width: 28px
+    }
+
+    .banCase {
+        height: 200px
+    }
+
+    .banCaseCon {
+        bottom: 10px
+    }
+
+    .banCaseTit {
+        padding: 5px 0;
+        font-size: 18px
+    }
+}
+
+@media (max-height: 414px) {
+    .mbox2Text {
+        padding: 50px 15px 0
+    }
+
+    .mbox2TitEn {
+        font-size: 18px
+    }
+
+    .mbox2TitCn {
+        font-size: 16px
+    }
+
+    .mbox2Brief {
+        max-height: 52px
+    }
+
+    .mbox2Num {
+        margin: 0 -10px
+    }
+
+    .mbox2NumSp {
+        font-size: 18px
+    }
+
+    .mbox2Num li p {
+        display: inline
+    }
+
+    .mbox2Img {
+        display: none
+    }
+
+    .mbox2Bot {
+        padding: 5px
+    }
+
+    .mbox3LefCon {
+        display: block;
+        padding: 0
+    }
+
+    .mbox3LefItem li {
+        display: inline-block;
+        padding: 0;
+        width: 48%
+    }
+
+    .mbox3LefItem li:after {
+        display: none
+    }
+
+    .mbox3Ico, .mbox3Line {
+        display: none
+    }
+
+    .mbox3Rig {
+        display: none
+    }
+}
+
+@media (max-height: 240px) {
+    .mbox2Brief {
+        max-height: 26px
+    }
+
+    .mbox3LefCon {
+        display: block
+    }
+}
